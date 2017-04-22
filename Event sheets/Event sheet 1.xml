@@ -3,61 +3,148 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
-        <event-block sid="368105805745685">
-            <conditions>
-                <condition id="-1" name="Every tick" sid="645696193443646" type="System" />
-            </conditions>
-            <actions>
-                <action id="-4" name="Set position to another object" sid="567817364168767" type="PlayerLight">
-                    <param id="0" name="Object">player</param>
-                    <param id="1" name="Image point (optional)">1</param>
-                </action>
-                <action id="-4" name="Set position to another object" sid="618710253308544" type="ShadowLight">
-                    <param id="0" name="Object">player</param>
-                    <param id="1" name="Image point (optional)">&quot;LightAnchor&quot;</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="485505983920132">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="815188481083355" type="System" />
-            </conditions>
-            <actions>
-                <action id="-3" name="Set position" sid="711340834940030" type="debug_text">
-                    <param id="0" name="X">player.X</param>
-                    <param id="1" name="Y">player.Y-30</param>
-                </action>
-                <action behavior="Pin" id="0" name="Pin to object" sid="281484735980116" type="debug_text">
-                    <param id="0" name="Pin to">player</param>
-                    <param id="1" name="Mode">0</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="902588713849944">
-            <conditions>
-                <condition id="-15" name="Pick nearest/furthest" sid="144594219464012" type="enemy">
-                    <param id="0" name="Which">0</param>
-                    <param id="1" name="X">player.X</param>
-                    <param id="2" name="Y">player.Y</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="0" name="Set text" sid="366982144698613" type="debug_text">
-                    <param id="0" name="Text">round(distance(player.X, player.Y, enemy.X, enemy.Y))</param>
-                </action>
-            </actions>
+        <variable comment="How far till screen shakes" constant="0" name="enemyDistance" sid="755956645796748" static="0" type="number">100</variable>
+        <event-group description="" sid="361759795033423" title="Debug">
             <sub-events>
-                <event-block sid="758960227750567">
+                <event-group description="" sid="933776026765928" title="DarknessToggle">
+                    <sub-events>
+                        <event-block sid="471571206092040">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="617193320936416" type="Keyboard">
+                                    <param id="0" name="Key">86 (V)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-14" name="Toggle boolean" sid="777803373382031" type="marker">
+                                    <param id="0" name="Instance variable">darknessVisible</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="590818574414014">
+                            <conditions>
+                                <condition id="-8" name="Is boolean instance variable set" sid="818425513505750" type="marker">
+                                    <param id="0" name="Instance variable">darknessVisible</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-4" name="Set layer visible" sid="283868780504180" type="System">
+                                    <param id="0" name="Layer">&quot;Darkness&quot;</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="392989144108443">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="377695987607783" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-4" name="Set layer visible" sid="549256894035962" type="System">
+                                    <param id="0" name="Layer">&quot;Darkness&quot;</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="258289257131224" title="PlayerSetup">
+            <sub-events>
+                <event-block sid="485505983920132">
                     <conditions>
-                        <condition id="-8" name="Compare two values" sid="900213678218355" type="System">
-                            <param id="0" name="First value">distance(enemy.X, enemy.Y, player.X, player.Y)</param>
-                            <param id="1" name="Comparison">2</param>
-                            <param id="2" name="Second value">100</param>
-                        </condition>
+                        <condition id="-2" name="On start of layout" sid="815188481083355" type="System" />
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="-3" name="Set position" sid="711340834940030" type="debug_text">
+                            <param id="0" name="X">player.X</param>
+                            <param id="1" name="Y">player.Y-30</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="281484735980116" type="debug_text">
+                            <param id="0" name="Pin to">player</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="368105805745685">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="645696193443646" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set position to another object" sid="567817364168767" type="PlayerLight">
+                            <param id="0" name="Object">player</param>
+                            <param id="1" name="Image point (optional)">1</param>
+                        </action>
+                        <action id="-4" name="Set position to another object" sid="618710253308544" type="ShadowLight">
+                            <param id="0" name="Object">player</param>
+                            <param id="1" name="Image point (optional)">&quot;LightAnchor&quot;</param>
+                        </action>
+                    </actions>
                 </event-block>
             </sub-events>
-        </event-block>
+        </event-group>
+        <event-group description="" sid="693205621943086" title="PickEnemyShake">
+            <sub-events>
+                <event-block sid="574939536100167">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="726579146373648" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Flash" id="0" name="Flash" sid="307911616295373" type="marker">
+                            <param id="0" name="&apos;On&apos; time">0.1</param>
+                            <param id="1" name="&apos;Off&apos; time">0.1</param>
+                            <param id="2" name="Duration">1.0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="244163321760179">
+                    <conditions>
+                        <condition behavior="Flash" id="1" name="On flash ended" sid="553405146942139" type="marker" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Flash" id="0" name="Flash" sid="250285915199827" type="marker">
+                            <param id="0" name="&apos;On&apos; time">0.1</param>
+                            <param id="1" name="&apos;Off&apos; time">0.1</param>
+                            <param id="2" name="Duration">1.0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="902588713849944">
+                    <conditions>
+                        <condition id="-15" name="Pick nearest/furthest" sid="144594219464012" type="enemy">
+                            <param id="0" name="Which">0</param>
+                            <param id="1" name="X">player.X</param>
+                            <param id="2" name="Y">player.Y</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="366982144698613" type="debug_text">
+                            <param id="0" name="Text">round(distance(player.X, player.Y, enemy.X, enemy.Y))</param>
+                        </action>
+                        <action id="-4" name="Set position to another object" sid="241381180705529" type="marker">
+                            <param id="0" name="Object">enemy</param>
+                            <param id="1" name="Image point (optional)">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="758960227750567">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="900213678218355" type="System">
+                                    <param id="0" name="First value">distance(enemy.X, enemy.Y, player.X, player.Y)</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Second value">100</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="ScrollTo" id="0" name="Shake" sid="960462383803511" type="player">
+                                    <param id="0" name="Magnitude">5</param>
+                                    <param id="1" name="Duration">0.1</param>
+                                    <param id="2" name="Mode">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>
