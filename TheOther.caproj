@@ -171,6 +171,18 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Letter" sid="997845622873493">
+            <plugin id="Text" />
+            <instance-variables>
+                <instance-variable name="letter" sid="903009461782735" type="string" />
+            </instance-variables>
+        </object-type>
+        <object-type name="Letter_display" sid="393648183254202">
+            <plugin id="Text" />
+            <instance-variables>
+                <instance-variable name="letter" sid="835172350962614" type="string" />
+            </instance-variables>
+        </object-type>
     </object-folder>
     <families>
         <family name="enemy" plugin-id="Sprite" sid="663671131925655">
