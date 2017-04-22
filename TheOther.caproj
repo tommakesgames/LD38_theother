@@ -10,8 +10,10 @@
     <unique-id>2m2oqhlgof90t</unique-id>
     <saved-with-version>24400</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Rex.Rainbow" id="Rex_Pause" version="1">Pause</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
@@ -183,6 +185,12 @@
                 <instance-variable name="letter" sid="835172350962614" type="string" />
             </instance-variables>
         </object-type>
+        <object-type name="Pause" sid="718951015106581">
+            <plugin id="Rex_Pause" />
+        </object-type>
+        <object-type name="Audio" sid="535689784568557">
+            <plugin id="Audio" />
+        </object-type>
     </object-folder>
     <families>
         <family name="enemy" plugin-id="Sprite" sid="663671131925655">
@@ -215,8 +223,30 @@
                 <analog-deadzone>25</analog-deadzone>
             </properties>
         </global-instance>
+        <global-instance type="Pause" uid="32" />
+        <global-instance type="Audio" uid="33">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
     </global-instances>
-    <sounds-folder />
+    <sounds-folder>
+        <file name="pickup.m4a" />
+        <file name="pickup.ogg" />
+        <file name="shout.m4a" />
+        <file name="shout.ogg" />
+        <file name="tv-static-01.m4a" />
+        <file name="tv-static-01.ogg" />
+    </sounds-folder>
     <music-folder />
     <files-folder>
         <file-folder name="Icons">

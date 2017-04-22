@@ -89,68 +89,6 @@
                         <opacity>0.300000012</opacity>
                     </world>
                 </instance>
-                <instance type="people" uid="1">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="UpDownJump">
-                            <properties>
-                                <active-on-start>Yes</active-on-start>
-                                <movement>Vertical</movement>
-                                <wave>Square</wave>
-                                <period>0.1</period>
-                                <period-random>0.2</period-random>
-                                <period-offset>0</period-offset>
-                                <period-offset-random>0.15</period-offset-random>
-                                <magnitude>2</magnitude>
-                                <magnitude-random>0</magnitude-random>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="SideRotate">
-                            <properties>
-                                <active-on-start>Yes</active-on-start>
-                                <movement>Angle</movement>
-                                <wave>Square</wave>
-                                <period>0.25</period>
-                                <period-random>1</period-random>
-                                <period-offset>0</period-offset>
-                                <period-offset-random>0.5</period-offset-random>
-                                <magnitude>5</magnitude>
-                                <magnitude-random>5</magnitude-random>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="ShadowCaster">
-                            <properties>
-                                <initial-state>Enabled</initial-state>
-                                <height>20</height>
-                                <tag></tag>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="Solid">
-                            <properties>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>235</x>
-                        <y>79</y>
-                        <z>0</z>
-                        <width>32</width>
-                        <height>32</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="people" uid="2">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -168,8 +106,8 @@
                                 <period-random>0.2</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0.15</period-offset-random>
-                                <magnitude>2</magnitude>
-                                <magnitude-random>0</magnitude-random>
+                                <magnitude>1</magnitude>
+                                <magnitude-random>2</magnitude-random>
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="SideRotate">
@@ -230,8 +168,8 @@
                                 <period-random>0.2</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0.15</period-offset-random>
-                                <magnitude>2</magnitude>
-                                <magnitude-random>0</magnitude-random>
+                                <magnitude>1</magnitude>
+                                <magnitude-random>2</magnitude-random>
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="SideRotate">
@@ -292,8 +230,8 @@
                                 <period-random>0.2</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0.15</period-offset-random>
-                                <magnitude>2</magnitude>
-                                <magnitude-random>0</magnitude-random>
+                                <magnitude>1</magnitude>
+                                <magnitude-random>2</magnitude-random>
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="SideRotate">
@@ -429,8 +367,8 @@
                                 <period-random>0.2</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0.15</period-offset-random>
-                                <magnitude>2</magnitude>
-                                <magnitude-random>0</magnitude-random>
+                                <magnitude>1</magnitude>
+                                <magnitude-random>2</magnitude-random>
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="SideRotate">
@@ -449,7 +387,7 @@
                         <behavior-instance type="ShadowCaster">
                             <properties>
                                 <initial-state>Enabled</initial-state>
-                                <height>100</height>
+                                <height>20</height>
                                 <tag></tag>
                             </properties>
                         </behavior-instance>
@@ -491,8 +429,8 @@
                                 <period-random>0.2</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0.15</period-offset-random>
-                                <magnitude>2</magnitude>
-                                <magnitude-random>0</magnitude-random>
+                                <magnitude>1</magnitude>
+                                <magnitude-random>2</magnitude-random>
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="SideRotate">
@@ -511,7 +449,7 @@
                         <behavior-instance type="ShadowCaster">
                             <properties>
                                 <initial-state>Enabled</initial-state>
-                                <height>100</height>
+                                <height>20</height>
                                 <tag></tag>
                             </properties>
                         </behavior-instance>
@@ -553,8 +491,8 @@
                                 <period-random>0.2</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0.15</period-offset-random>
-                                <magnitude>2</magnitude>
-                                <magnitude-random>0</magnitude-random>
+                                <magnitude>1</magnitude>
+                                <magnitude-random>2</magnitude-random>
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="SideRotate">
@@ -573,7 +511,7 @@
                         <behavior-instance type="ShadowCaster">
                             <properties>
                                 <initial-state>Enabled</initial-state>
-                                <height>100</height>
+                                <height>20</height>
                                 <tag></tag>
                             </properties>
                         </behavior-instance>
@@ -615,8 +553,8 @@
                                 <period-random>0.2</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0.15</period-offset-random>
-                                <magnitude>2</magnitude>
-                                <magnitude-random>0</magnitude-random>
+                                <magnitude>1</magnitude>
+                                <magnitude-random>2</magnitude-random>
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="SideRotate">
@@ -635,7 +573,7 @@
                         <behavior-instance type="ShadowCaster">
                             <properties>
                                 <initial-state>Enabled</initial-state>
-                                <height>100</height>
+                                <height>20</height>
                                 <tag></tag>
                             </properties>
                         </behavior-instance>
@@ -677,8 +615,8 @@
                                 <period-random>0.2</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0.15</period-offset-random>
-                                <magnitude>2</magnitude>
-                                <magnitude-random>0</magnitude-random>
+                                <magnitude>1</magnitude>
+                                <magnitude-random>2</magnitude-random>
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="SideRotate">
@@ -697,7 +635,7 @@
                         <behavior-instance type="ShadowCaster">
                             <properties>
                                 <initial-state>Enabled</initial-state>
-                                <height>100</height>
+                                <height>20</height>
                                 <tag></tag>
                             </properties>
                         </behavior-instance>
@@ -739,8 +677,8 @@
                                 <period-random>0.2</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0.15</period-offset-random>
-                                <magnitude>2</magnitude>
-                                <magnitude-random>0</magnitude-random>
+                                <magnitude>1</magnitude>
+                                <magnitude-random>2</magnitude-random>
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="SideRotate">
@@ -801,8 +739,8 @@
                                 <period-random>0.2</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0.15</period-offset-random>
-                                <magnitude>2</magnitude>
-                                <magnitude-random>0</magnitude-random>
+                                <magnitude>1</magnitude>
+                                <magnitude-random>2</magnitude-random>
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="SideRotate">
@@ -885,33 +823,33 @@
                         <behavior-instance type="UpDownJump">
                             <properties>
                                 <active-on-start>Yes</active-on-start>
-                                <movement>Horizontal</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
-                                <period-random>0</period-random>
+                                <movement>Vertical</movement>
+                                <wave>Square</wave>
+                                <period>0.1</period>
+                                <period-random>0.2</period-random>
                                 <period-offset>0</period-offset>
-                                <period-offset-random>0</period-offset-random>
-                                <magnitude>50</magnitude>
-                                <magnitude-random>0</magnitude-random>
+                                <period-offset-random>0.15</period-offset-random>
+                                <magnitude>1</magnitude>
+                                <magnitude-random>2</magnitude-random>
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="SideRotate">
                             <properties>
                                 <active-on-start>Yes</active-on-start>
-                                <movement>Horizontal</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
-                                <period-random>0</period-random>
+                                <movement>Angle</movement>
+                                <wave>Square</wave>
+                                <period>0.25</period>
+                                <period-random>1</period-random>
                                 <period-offset>0</period-offset>
-                                <period-offset-random>0</period-offset-random>
-                                <magnitude>50</magnitude>
-                                <magnitude-random>0</magnitude-random>
+                                <period-offset-random>0.5</period-offset-random>
+                                <magnitude>5</magnitude>
+                                <magnitude-random>5</magnitude-random>
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="ShadowCaster">
                             <properties>
                                 <initial-state>Enabled</initial-state>
-                                <height>100</height>
+                                <height>20</height>
                                 <tag></tag>
                             </properties>
                         </behavior-instance>
@@ -947,33 +885,33 @@
                         <behavior-instance type="UpDownJump">
                             <properties>
                                 <active-on-start>Yes</active-on-start>
-                                <movement>Horizontal</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
-                                <period-random>0</period-random>
+                                <movement>Vertical</movement>
+                                <wave>Square</wave>
+                                <period>0.1</period>
+                                <period-random>0.2</period-random>
                                 <period-offset>0</period-offset>
-                                <period-offset-random>0</period-offset-random>
-                                <magnitude>50</magnitude>
-                                <magnitude-random>0</magnitude-random>
+                                <period-offset-random>0.15</period-offset-random>
+                                <magnitude>1</magnitude>
+                                <magnitude-random>2</magnitude-random>
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="SideRotate">
                             <properties>
                                 <active-on-start>Yes</active-on-start>
-                                <movement>Horizontal</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
-                                <period-random>0</period-random>
+                                <movement>Angle</movement>
+                                <wave>Square</wave>
+                                <period>0.25</period>
+                                <period-random>1</period-random>
                                 <period-offset>0</period-offset>
-                                <period-offset-random>0</period-offset-random>
-                                <magnitude>50</magnitude>
-                                <magnitude-random>0</magnitude-random>
+                                <period-offset-random>0.5</period-offset-random>
+                                <magnitude>5</magnitude>
+                                <magnitude-random>5</magnitude-random>
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="ShadowCaster">
                             <properties>
                                 <initial-state>Enabled</initial-state>
-                                <height>100</height>
+                                <height>20</height>
                                 <tag></tag>
                             </properties>
                         </behavior-instance>
@@ -1009,33 +947,33 @@
                         <behavior-instance type="UpDownJump">
                             <properties>
                                 <active-on-start>Yes</active-on-start>
-                                <movement>Horizontal</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
-                                <period-random>0</period-random>
+                                <movement>Vertical</movement>
+                                <wave>Square</wave>
+                                <period>0.1</period>
+                                <period-random>0.2</period-random>
                                 <period-offset>0</period-offset>
-                                <period-offset-random>0</period-offset-random>
-                                <magnitude>50</magnitude>
-                                <magnitude-random>0</magnitude-random>
+                                <period-offset-random>0.15</period-offset-random>
+                                <magnitude>1</magnitude>
+                                <magnitude-random>2</magnitude-random>
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="SideRotate">
                             <properties>
                                 <active-on-start>Yes</active-on-start>
-                                <movement>Horizontal</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
-                                <period-random>0</period-random>
+                                <movement>Angle</movement>
+                                <wave>Square</wave>
+                                <period>0.25</period>
+                                <period-random>1</period-random>
                                 <period-offset>0</period-offset>
-                                <period-offset-random>0</period-offset-random>
-                                <magnitude>50</magnitude>
-                                <magnitude-random>0</magnitude-random>
+                                <period-offset-random>0.5</period-offset-random>
+                                <magnitude>5</magnitude>
+                                <magnitude-random>5</magnitude-random>
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="ShadowCaster">
                             <properties>
                                 <initial-state>Enabled</initial-state>
-                                <height>100</height>
+                                <height>20</height>
                                 <tag></tag>
                             </properties>
                         </behavior-instance>
@@ -1071,33 +1009,33 @@
                         <behavior-instance type="UpDownJump">
                             <properties>
                                 <active-on-start>Yes</active-on-start>
-                                <movement>Horizontal</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
-                                <period-random>0</period-random>
+                                <movement>Vertical</movement>
+                                <wave>Square</wave>
+                                <period>0.1</period>
+                                <period-random>0.2</period-random>
                                 <period-offset>0</period-offset>
-                                <period-offset-random>0</period-offset-random>
-                                <magnitude>50</magnitude>
-                                <magnitude-random>0</magnitude-random>
+                                <period-offset-random>0.15</period-offset-random>
+                                <magnitude>1</magnitude>
+                                <magnitude-random>2</magnitude-random>
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="SideRotate">
                             <properties>
                                 <active-on-start>Yes</active-on-start>
-                                <movement>Horizontal</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
-                                <period-random>0</period-random>
+                                <movement>Angle</movement>
+                                <wave>Square</wave>
+                                <period>0.25</period>
+                                <period-random>1</period-random>
                                 <period-offset>0</period-offset>
-                                <period-offset-random>0</period-offset-random>
-                                <magnitude>50</magnitude>
-                                <magnitude-random>0</magnitude-random>
+                                <period-offset-random>0.5</period-offset-random>
+                                <magnitude>5</magnitude>
+                                <magnitude-random>5</magnitude-random>
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="ShadowCaster">
                             <properties>
                                 <initial-state>Enabled</initial-state>
-                                <height>100</height>
+                                <height>20</height>
                                 <tag></tag>
                             </properties>
                         </behavior-instance>
@@ -1133,33 +1071,33 @@
                         <behavior-instance type="UpDownJump">
                             <properties>
                                 <active-on-start>Yes</active-on-start>
-                                <movement>Horizontal</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
-                                <period-random>0</period-random>
+                                <movement>Vertical</movement>
+                                <wave>Square</wave>
+                                <period>0.1</period>
+                                <period-random>0.2</period-random>
                                 <period-offset>0</period-offset>
-                                <period-offset-random>0</period-offset-random>
-                                <magnitude>50</magnitude>
-                                <magnitude-random>0</magnitude-random>
+                                <period-offset-random>0.15</period-offset-random>
+                                <magnitude>1</magnitude>
+                                <magnitude-random>2</magnitude-random>
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="SideRotate">
                             <properties>
                                 <active-on-start>Yes</active-on-start>
-                                <movement>Horizontal</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
-                                <period-random>0</period-random>
+                                <movement>Angle</movement>
+                                <wave>Square</wave>
+                                <period>0.25</period>
+                                <period-random>1</period-random>
                                 <period-offset>0</period-offset>
-                                <period-offset-random>0</period-offset-random>
-                                <magnitude>50</magnitude>
-                                <magnitude-random>0</magnitude-random>
+                                <period-offset-random>0.5</period-offset-random>
+                                <magnitude>5</magnitude>
+                                <magnitude-random>5</magnitude-random>
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="ShadowCaster">
                             <properties>
                                 <initial-state>Enabled</initial-state>
-                                <height>100</height>
+                                <height>20</height>
                                 <tag></tag>
                             </properties>
                         </behavior-instance>
@@ -1195,33 +1133,33 @@
                         <behavior-instance type="UpDownJump">
                             <properties>
                                 <active-on-start>Yes</active-on-start>
-                                <movement>Horizontal</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
-                                <period-random>0</period-random>
+                                <movement>Vertical</movement>
+                                <wave>Square</wave>
+                                <period>0.1</period>
+                                <period-random>0.2</period-random>
                                 <period-offset>0</period-offset>
-                                <period-offset-random>0</period-offset-random>
-                                <magnitude>50</magnitude>
-                                <magnitude-random>0</magnitude-random>
+                                <period-offset-random>0.15</period-offset-random>
+                                <magnitude>1</magnitude>
+                                <magnitude-random>2</magnitude-random>
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="SideRotate">
                             <properties>
                                 <active-on-start>Yes</active-on-start>
-                                <movement>Horizontal</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
-                                <period-random>0</period-random>
+                                <movement>Angle</movement>
+                                <wave>Square</wave>
+                                <period>0.25</period>
+                                <period-random>1</period-random>
                                 <period-offset>0</period-offset>
-                                <period-offset-random>0</period-offset-random>
-                                <magnitude>50</magnitude>
-                                <magnitude-random>0</magnitude-random>
+                                <period-offset-random>0.5</period-offset-random>
+                                <magnitude>5</magnitude>
+                                <magnitude-random>5</magnitude-random>
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="ShadowCaster">
                             <properties>
                                 <initial-state>Enabled</initial-state>
-                                <height>100</height>
+                                <height>20</height>
                                 <tag></tag>
                             </properties>
                         </behavior-instance>
@@ -1336,6 +1274,68 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="people" uid="1">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="UpDownJump">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Vertical</movement>
+                                <wave>Square</wave>
+                                <period>0.1</period>
+                                <period-random>0.2</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0.15</period-offset-random>
+                                <magnitude>1</magnitude>
+                                <magnitude-random>2</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="SideRotate">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Angle</movement>
+                                <wave>Square</wave>
+                                <period>0.25</period>
+                                <period-random>1</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0.5</period-offset-random>
+                                <magnitude>5</magnitude>
+                                <magnitude-random>5</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="ShadowCaster">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                                <height>20</height>
+                                <tag></tag>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>537</x>
+                        <y>73</y>
+                        <z>0</z>
+                        <width>32</width>
+                        <height>32</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
@@ -1348,7 +1348,7 @@
                 <y>1</y>
             </parallax>
             <zoom-rate>1</zoom-rate>
-            <opacity>1</opacity>
+            <opacity>0.95</opacity>
             <force-own-texture>1</force-own-texture>
             <global>0</global>
             <use-render-cells>0</use-render-cells>
