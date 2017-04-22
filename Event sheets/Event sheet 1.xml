@@ -2,5 +2,53 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
-    <events />
+    <events>
+        <event-block sid="368105805745685">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="645696193443646" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set position to another object" sid="567817364168767" type="PlayerLight">
+                    <param id="0" name="Object">player</param>
+                    <param id="1" name="Image point (optional)">1</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="618710253308544" type="ShadowLight">
+                    <param id="0" name="Object">player</param>
+                    <param id="1" name="Image point (optional)">&quot;LightAnchor&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="366982144698613" type="debug_text">
+                    <param id="0" name="Text">distance(player.X, player.Y, enemy.X, enemy.Y)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="745742687807386">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="989813601996223" type="System">
+                    <param id="0" name="First value">distance(player.X, player.Y, enemy.X, enemy.Y)</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Second value">100</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-18" name="Rotate clockwise" sid="717846877595723" type="player">
+                    <param id="0" name="Degrees">20</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="485505983920132">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="815188481083355" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="711340834940030" type="debug_text">
+                    <param id="0" name="X">player.X-(debug_text.Width/2)</param>
+                    <param id="1" name="Y">player.Y-30</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="281484735980116" type="debug_text">
+                    <param id="0" name="Pin to">player</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
 </c2eventsheet>
