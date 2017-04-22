@@ -3,7 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
-        <variable constant="0" name="staticVolume" sid="287861013927092" static="0" type="number">-10</variable>
+        <variable constant="0" name="initialStaticVolume" sid="468792055856604" static="0" type="number">-5</variable>
+        <variable constant="0" name="staticVolume" sid="287861013927092" static="0" type="number">-5</variable>
         <variable constant="0" name="initialShake" sid="610507537245482" static="0" type="number">30</variable>
         <variable comment="How far till screen shakes" constant="0" name="enemyDistance" sid="755956645796748" static="0" type="number">100</variable>
         <event-group description="" sid="361759795033423" title="Debug">
@@ -165,6 +166,10 @@
                                 <condition id="-4" name="Trigger once while true" sid="550143831318135" type="System" />
                             </conditions>
                             <actions>
+                                <action id="-9" name="Set value" sid="590210418928855" type="System">
+                                    <param id="0" name="Variable">staticVolume</param>
+                                    <param id="1" name="Value">initialStaticVolume</param>
+                                </action>
                                 <action id="0" name="Play" sid="287830287438510" type="Audio">
                                     <param id="0" name="Audio file">tv-static-01</param>
                                     <param id="2" name="Loop">1</param>
@@ -197,7 +202,7 @@
                                 <condition id="-14" name="Compare variable" sid="137728019757440" type="System">
                                     <param id="0" name="Variable">staticVolume</param>
                                     <param id="1" name="Comparison">3</param>
-                                    <param id="2" name="Value">-20</param>
+                                    <param id="2" name="Value">-30</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -206,7 +211,7 @@
                                 </action>
                                 <action id="-9" name="Set value" sid="738998959616209" type="System">
                                     <param id="0" name="Variable">staticVolume</param>
-                                    <param id="1" name="Value">-10</param>
+                                    <param id="1" name="Value">initialStaticVolume</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -232,6 +237,12 @@
                         <action id="-9" name="Destroy" sid="270941110615845" type="Letter" />
                         <action id="0" name="Set text" sid="899110725520060" type="Letter_display">
                             <param id="0" name="Text">Letter_display.letter</param>
+                        </action>
+                        <action id="0" name="Play" sid="109541593899745" type="Audio">
+                            <param id="0" name="Audio file">pickup</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                     </actions>
                 </event-block>
