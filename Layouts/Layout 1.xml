@@ -104,6 +104,11 @@
                                 <tag></tag>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -133,6 +138,11 @@
                                 <initial-state>Enabled</initial-state>
                                 <height>20</height>
                                 <tag></tag>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
                     </behavior-instances>
@@ -166,6 +176,11 @@
                                 <tag></tag>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -195,6 +210,11 @@
                                 <initial-state>Enabled</initial-state>
                                 <height>20</height>
                                 <tag></tag>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
                     </behavior-instances>
@@ -279,7 +299,7 @@
                         <x>-92</x>
                         <y>153</y>
                         <z>0</z>
-                        <width>200</width>
+                        <width>50</width>
                         <height>30</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>

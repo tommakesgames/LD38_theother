@@ -16,23 +16,6 @@
                     <param id="0" name="Object">player</param>
                     <param id="1" name="Image point (optional)">&quot;LightAnchor&quot;</param>
                 </action>
-                <action id="0" name="Set text" sid="366982144698613" type="debug_text">
-                    <param id="0" name="Text">distance(player.X, player.Y, enemy.X, enemy.Y)</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="745742687807386">
-            <conditions>
-                <condition id="-8" name="Compare two values" sid="989813601996223" type="System">
-                    <param id="0" name="First value">distance(player.X, player.Y, enemy.X, enemy.Y)</param>
-                    <param id="1" name="Comparison">2</param>
-                    <param id="2" name="Second value">100</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-18" name="Rotate clockwise" sid="717846877595723" type="player">
-                    <param id="0" name="Degrees">20</param>
-                </action>
             </actions>
         </event-block>
         <event-block sid="485505983920132">
@@ -41,7 +24,7 @@
             </conditions>
             <actions>
                 <action id="-3" name="Set position" sid="711340834940030" type="debug_text">
-                    <param id="0" name="X">player.X-(debug_text.Width/2)</param>
+                    <param id="0" name="X">player.X</param>
                     <param id="1" name="Y">player.Y-30</param>
                 </action>
                 <action behavior="Pin" id="0" name="Pin to object" sid="281484735980116" type="debug_text">
@@ -49,6 +32,32 @@
                     <param id="1" name="Mode">0</param>
                 </action>
             </actions>
+        </event-block>
+        <event-block sid="902588713849944">
+            <conditions>
+                <condition id="-15" name="Pick nearest/furthest" sid="144594219464012" type="enemy">
+                    <param id="0" name="Which">0</param>
+                    <param id="1" name="X">player.X</param>
+                    <param id="2" name="Y">player.Y</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="366982144698613" type="debug_text">
+                    <param id="0" name="Text">round(distance(player.X, player.Y, enemy.X, enemy.Y))</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="758960227750567">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="900213678218355" type="System">
+                            <param id="0" name="First value">distance(enemy.X, enemy.Y, player.X, player.Y)</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Second value">100</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>

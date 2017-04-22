@@ -24,6 +24,7 @@
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="shadowcaster" version="1">Shadow Caster</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
     <used-effects />
     <configurations>
@@ -63,6 +64,9 @@
             <behaviors>
                 <behavior-type name="ShadowCaster" sid="825217638470251">
                     <behavior id="shadowcaster" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="248109114609484">
+                    <behavior id="solid" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
