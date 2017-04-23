@@ -26,15 +26,28 @@
                 <action id="0" name="Set text" sid="526657349371729" type="final">
                     <param id="0" name="Text">&quot;Score: &quot;&amp;finalScore</param>
                 </action>
-                <action behavior="Flash" id="0" name="Flash" sid="566653312196468" type="Title">
-                    <param id="0" name="&apos;On&apos; time">0.1</param>
-                    <param id="1" name="&apos;Off&apos; time">0.1</param>
-                    <param id="2" name="Duration">3</param>
-                </action>
-                <action id="0" name="Set text" sid="286582165998709" type="Title">
-                    <param id="0" name="Text">&quot;The End: TIME OUT&quot;</param>
-                </action>
             </actions>
+            <sub-events>
+                <event-block sid="904356788379569">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="702765459674470" type="System">
+                            <param id="0" name="Variable">timeLeft</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="286582165998709" type="Title">
+                            <param id="0" name="Text">&quot;The End: TIME OUT&quot;</param>
+                        </action>
+                        <action behavior="Flash" id="0" name="Flash" sid="566653312196468" type="Title">
+                            <param id="0" name="&apos;On&apos; time">0.1</param>
+                            <param id="1" name="&apos;Off&apos; time">0.1</param>
+                            <param id="2" name="Duration">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>

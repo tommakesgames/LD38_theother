@@ -5,8 +5,8 @@
     <events>
         <variable constant="0" name="friendsNumber" sid="335956677499961" static="0" type="number">0</variable>
         <variable constant="0" name="lettersCollected" sid="230758650722186" static="0" type="number">0</variable>
-        <variable constant="0" name="timeLeft" sid="315727437506435" static="0" type="number">30</variable>
-        <variable comment="How shake atic decreases by when you say hello" constant="0" name="shakeSubstraction" sid="734979746222153" static="0" type="number">7</variable>
+        <variable constant="0" name="timeLeft" sid="315727437506435" static="0" type="number">120</variable>
+        <variable comment="How shake decreases by when you say hello" constant="0" name="shakeSubstraction" sid="734979746222153" static="0" type="number">7</variable>
         <variable constant="0" name="shoutGrayscale" sid="276204648380167" static="0" type="number">20</variable>
         <variable constant="0" name="helloGrayscaleNo" sid="799044145178545" static="0" type="number">10</variable>
         <variable constant="0" name="friendDistance" sid="106722928681137" static="0" type="number">120</variable>
@@ -135,6 +135,14 @@
                         </action>
                         <action id="0" name="Set text" sid="296154933422892" type="Letter">
                             <param id="0" name="Text">Letter.letter</param>
+                        </action>
+                        <action id="-4" name="Set position to another object" sid="492628826392745" type="Sprite">
+                            <param id="0" name="Object">player</param>
+                            <param id="1" name="Image point (optional)">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="133462538922494" type="Sprite">
+                            <param id="0" name="Pin to">player</param>
+                            <param id="1" name="Mode">4</param>
                         </action>
                     </actions>
                 </event-block>

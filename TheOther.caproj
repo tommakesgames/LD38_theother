@@ -75,8 +75,50 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="627258595928175" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="627258595928175" speed="8">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Synapse\Documents\GitHub\LD38_theother\Images\raw\converted\1_1.png">
+                        <collision-poly>
+                            <point x="0.08" y="0.0769231" />
+                            <point x="0.5" y="0.00961538" />
+                            <point x="0.906667" y="0.0897436" />
+                            <point x="0.82" y="0.5" />
+                            <point x="0.5" y="0.971154" />
+                            <point x="0.373333" y="0.641026" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Synapse\Documents\GitHub\LD38_theother\Images\raw\converted\1_4.png">
+                        <collision-poly>
+                            <point x="0.100694" y="0.0857988" />
+                            <point x="0.5" y="0.00887574" />
+                            <point x="0.923611" y="0.0650888" />
+                            <point x="0.65625" y="0.707101" />
+                            <point x="0.5" y="0.878698" />
+                            <point x="0.347222" y="0.704142" />
+                            <point x="0.232639" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501754" hotspotY="0.50303" original-source="C:\Users\Synapse\Documents\GitHub\LD38_theother\Images\raw\converted\1_2.png">
+                        <collision-poly>
+                            <point x="0.0802676" y="0.0766773" />
+                            <point x="0.498328" y="0.00958466" />
+                            <point x="0.906354" y="0.0894569" />
+                            <point x="0.67893" y="0.693291" />
+                            <point x="0.498328" y="0.968051" />
+                            <point x="0.374582" y="0.642173" />
+                            <point x="0.29097" y="0.498403" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501475" original-source="C:\Users\Synapse\Documents\GitHub\LD38_theother\Images\raw\converted\1_3.png">
+                        <collision-poly>
+                            <point x="0.0810811" y="0.0759494" />
+                            <point x="0.5" y="0.0126582" />
+                            <point x="0.908784" y="0.085443" />
+                            <point x="0.682432" y="0.702532" />
+                            <point x="0.5" y="0.949367" />
+                            <point x="0.381757" y="0.642405" />
+                            <point x="0.297297" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -111,7 +153,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="264756700688025" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Synapse\Documents\GitHub\LD38_theother\Images\raw\player.png">
                         <image-point name="LightAnchor" x="0.5" y="0.5" />
                         <image-point name="shoutAnchor" x="1" y="0.5" />
                     </frame>
@@ -157,8 +199,51 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="151483908224630" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="151483908224630" speed="8">
+                    <frame duration="1" hotspotX="0.501247" hotspotY="0.501139" original-source="C:\Users\Synapse\Documents\GitHub\LD38_theother\Images\raw\converted\2_1.png">
+                        <collision-poly>
+                            <point x="0.269327" y="0.246014" />
+                            <point x="0.498753" y="0.0205011" />
+                            <point x="0.720698" y="0.255125" />
+                            <point x="0.990025" y="0.498861" />
+                            <point x="0.745636" y="0.767654" />
+                            <point x="0.498753" y="0.965831" />
+                            <point x="0.286783" y="0.738041" />
+                            <point x="0.112219" y="0.498861" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501188" original-source="C:\Users\Synapse\Documents\GitHub\LD38_theother\Images\raw\converted\2_2.png">
+                        <collision-poly>
+                            <point x="0.5" y="0.04038" />
+                            <point x="0.965909" y="0.498812" />
+                            <point x="0.724432" y="0.769596" />
+                            <point x="0.5" y="0.961995" />
+                            <point x="0.28125" y="0.764846" />
+                            <point x="0.0284091" y="0.498812" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501466" hotspotY="0.501193" original-source="C:\Users\Synapse\Documents\GitHub\LD38_theother\Images\raw\converted\2_3.png">
+                        <collision-poly>
+                            <point x="0.243402" y="0.198091" />
+                            <point x="0.498534" y="0.0954654" />
+                            <point x="0.97654" y="0.498807" />
+                            <point x="0.753666" y="0.799523" />
+                            <point x="0.498534" y="0.97136" />
+                            <point x="0.255132" y="0.792363" />
+                            <point x="0.0234604" y="0.498807" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.502252" original-source="C:\Users\Synapse\Documents\GitHub\LD38_theother\Images\raw\converted\2_4.png">
+                        <collision-poly>
+                            <point x="0.226415" y="0.189189" />
+                            <point x="0.498652" y="0.0878378" />
+                            <point x="0.884097" y="0.5" />
+                            <point x="0.733154" y="0.777027" />
+                            <point x="0.498652" y="0.941441" />
+                            <point x="0.239892" y="0.79955" />
+                            <point x="0.0377358" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -170,8 +255,55 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="941088444110300" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="941088444110300" speed="7">
+                    <frame duration="2" hotspotX="0.502164" hotspotY="0.501119" original-source="C:\Users\Synapse\Documents\GitHub\LD38_theother\Images\raw\converted\3_1.png">
+                        <collision-poly>
+                            <point x="0.125541" y="0.064877" />
+                            <point x="0.497835" y="0.00447427" />
+                            <point x="0.835498" y="0.0850112" />
+                            <point x="0.952381" y="0.498881" />
+                            <point x="0.878788" y="0.93736" />
+                            <point x="0.497835" y="0.970917" />
+                            <point x="0.242424" y="0.87472" />
+                            <point x="0.0909091" y="0.498881" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.502128" hotspotY="0.501114" original-source="C:\Users\Synapse\Documents\GitHub\LD38_theother\Images\raw\converted\3_2.png">
+                        <collision-poly>
+                            <point x="0.12766" y="0.0668151" />
+                            <point x="0.497872" y="0.0222717" />
+                            <point x="0.838298" y="0.0846325" />
+                            <point x="0.957447" y="0.498886" />
+                            <point x="0.838298" y="0.915367" />
+                            <point x="0.497872" y="0.973274" />
+                            <point x="0.170213" y="0.910913" />
+                            <point x="0.0340426" y="0.498886" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.503497" hotspotY="0.501071" original-source="C:\Users\Synapse\Documents\GitHub\LD38_theother\Images\raw\converted\3_3.png">
+                        <collision-poly>
+                            <point x="0.118881" y="0.0728051" />
+                            <point x="0.5" y="0.00642398" />
+                            <point x="0.793706" y="0.126338" />
+                            <point x="0.993007" y="0.498929" />
+                            <point x="0.874126" y="0.922912" />
+                            <point x="0.5" y="0.974304" />
+                            <point x="0.206294" y="0.873662" />
+                            <point x="0.101399" y="0.498929" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504132" hotspotY="0.5" original-source="C:\Users\Synapse\Documents\GitHub\LD38_theother\Images\raw\converted\3_4.png">
+                        <collision-poly>
+                            <point x="0.0991736" y="0.0538117" />
+                            <point x="0.5" y="0.00672646" />
+                            <point x="0.793388" y="0.112108" />
+                            <point x="0.958678" y="0.5" />
+                            <point x="0.871901" y="0.930493" />
+                            <point x="0.5" y="0.986547" />
+                            <point x="0.165289" y="0.910314" />
+                            <point x="0.0785124" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -225,8 +357,52 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="870856026854970" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="870856026854970" speed="8">
+                    <frame duration="1" hotspotX="0.501048" hotspotY="0.501683" original-source="C:\Users\Synapse\Documents\GitHub\LD38_theother\Images\raw\converted\4_1.png">
+                        <collision-poly>
+                            <point x="0.033543" y="0.0538721" />
+                            <point x="0.498952" y="0.121212" />
+                            <point x="0.781971" y="0.350168" />
+                            <point x="0.997904" y="0.996633" />
+                            <point x="0.498952" y="0.801347" />
+                            <point x="0.186583" y="0.700337" />
+                            <point x="0.161426" y="0.498316" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501027" hotspotY="0.5" original-source="C:\Users\Synapse\Documents\GitHub\LD38_theother\Images\raw\converted\4_2.png">
+                        <collision-poly>
+                            <point x="0.0143737" y="0.0209581" />
+                            <point x="0.498973" y="0.128743" />
+                            <point x="0.772074" y="0.332335" />
+                            <point x="0.997947" y="0.997006" />
+                            <point x="0.209446" y="0.694611" />
+                            <point x="0.209446" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.500917" hotspotY="0.501548" original-source="C:\Users\Synapse\Documents\GitHub\LD38_theother\Images\raw\converted\4_3.png">
+                        <collision-poly>
+                            <point x="0.0385321" y="0.0650155" />
+                            <point x="0.499083" y="0.136223" />
+                            <point x="0.772477" y="0.383901" />
+                            <point x="0.80367" y="0.498452" />
+                            <point x="0.957798" y="0.928793" />
+                            <point x="0.499083" y="0.823529" />
+                            <point x="0.211009" y="0.643963" />
+                            <point x="0.183486" y="0.498452" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.500921" hotspotY="0.501567" original-source="C:\Users\Synapse\Documents\GitHub\LD38_theother\Images\raw\converted\4_4.png">
+                        <collision-poly>
+                            <point x="0.0368324" y="0.0626959" />
+                            <point x="0.499079" y="0.137931" />
+                            <point x="0.756906" y="0.413793" />
+                            <point x="0.782689" y="0.498433" />
+                            <point x="0.93186" y="0.884013" />
+                            <point x="0.499079" y="0.808777" />
+                            <point x="0.21547" y="0.633229" />
+                            <point x="0.186004" y="0.498433" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -359,6 +535,30 @@
                 </behavior-type>
             </behaviors>
             <texture />
+        </object-type>
+        <object-type name="Sprite" sid="485121298322600">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="576396037807130">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="995312748166057" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Synapse\Documents\GitHub\LD38_theother\Images\raw\player.png">
+                        <collision-poly>
+                            <point x="0.184466" y="0.251656" />
+                            <point x="0.5" y="0.0430464" />
+                            <point x="0.876214" y="0.168874" />
+                            <point x="0.975728" y="0.5" />
+                            <point x="0.851942" y="0.798013" />
+                            <point x="0.5" y="0.956954" />
+                            <point x="0.135922" y="0.81457" />
+                            <point x="0.0412621" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families>
