@@ -128,11 +128,12 @@
                                 <speed>50</speed>
                                 <acceleration>0</acceleration>
                                 <gravity>0</gravity>
-                                <bounce-off-solids>No</bounce-off-solids>
+                                <bounce-off-solids>Yes</bounce-off-solids>
                                 <set-angle>No</set-angle>
                                 <initial-state>Disabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Timer" />
                         <behavior-instance type="ShadowCaster">
                             <properties>
                                 <initial-state>Enabled</initial-state>
@@ -200,11 +201,12 @@
                                 <speed>50</speed>
                                 <acceleration>0</acceleration>
                                 <gravity>0</gravity>
-                                <bounce-off-solids>No</bounce-off-solids>
+                                <bounce-off-solids>Yes</bounce-off-solids>
                                 <set-angle>No</set-angle>
                                 <initial-state>Disabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Timer" />
                         <behavior-instance type="ShadowCaster">
                             <properties>
                                 <initial-state>Enabled</initial-state>
@@ -272,11 +274,12 @@
                                 <speed>50</speed>
                                 <acceleration>0</acceleration>
                                 <gravity>0</gravity>
-                                <bounce-off-solids>No</bounce-off-solids>
+                                <bounce-off-solids>Yes</bounce-off-solids>
                                 <set-angle>No</set-angle>
                                 <initial-state>Disabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Timer" />
                         <behavior-instance type="ShadowCaster">
                             <properties>
                                 <initial-state>Enabled</initial-state>
@@ -420,11 +423,12 @@
                                 <speed>50</speed>
                                 <acceleration>0</acceleration>
                                 <gravity>0</gravity>
-                                <bounce-off-solids>No</bounce-off-solids>
+                                <bounce-off-solids>Yes</bounce-off-solids>
                                 <set-angle>No</set-angle>
                                 <initial-state>Disabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Timer" />
                         <behavior-instance type="ShadowCaster">
                             <properties>
                                 <initial-state>Enabled</initial-state>
@@ -492,11 +496,12 @@
                                 <speed>50</speed>
                                 <acceleration>0</acceleration>
                                 <gravity>0</gravity>
-                                <bounce-off-solids>No</bounce-off-solids>
+                                <bounce-off-solids>Yes</bounce-off-solids>
                                 <set-angle>No</set-angle>
                                 <initial-state>Disabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Timer" />
                         <behavior-instance type="ShadowCaster">
                             <properties>
                                 <initial-state>Enabled</initial-state>
@@ -564,11 +569,12 @@
                                 <speed>50</speed>
                                 <acceleration>0</acceleration>
                                 <gravity>0</gravity>
-                                <bounce-off-solids>No</bounce-off-solids>
+                                <bounce-off-solids>Yes</bounce-off-solids>
                                 <set-angle>No</set-angle>
                                 <initial-state>Disabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Timer" />
                         <behavior-instance type="ShadowCaster">
                             <properties>
                                 <initial-state>Enabled</initial-state>
@@ -636,11 +642,12 @@
                                 <speed>50</speed>
                                 <acceleration>0</acceleration>
                                 <gravity>0</gravity>
-                                <bounce-off-solids>No</bounce-off-solids>
+                                <bounce-off-solids>Yes</bounce-off-solids>
                                 <set-angle>No</set-angle>
                                 <initial-state>Disabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Timer" />
                         <behavior-instance type="ShadowCaster">
                             <properties>
                                 <initial-state>Enabled</initial-state>
@@ -708,11 +715,12 @@
                                 <speed>50</speed>
                                 <acceleration>0</acceleration>
                                 <gravity>0</gravity>
-                                <bounce-off-solids>No</bounce-off-solids>
+                                <bounce-off-solids>Yes</bounce-off-solids>
                                 <set-angle>No</set-angle>
                                 <initial-state>Disabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Timer" />
                         <behavior-instance type="ShadowCaster">
                             <properties>
                                 <initial-state>Enabled</initial-state>
@@ -780,11 +788,12 @@
                                 <speed>50</speed>
                                 <acceleration>0</acceleration>
                                 <gravity>0</gravity>
-                                <bounce-off-solids>No</bounce-off-solids>
+                                <bounce-off-solids>Yes</bounce-off-solids>
                                 <set-angle>No</set-angle>
                                 <initial-state>Disabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Timer" />
                         <behavior-instance type="ShadowCaster">
                             <properties>
                                 <initial-state>Enabled</initial-state>
@@ -852,11 +861,12 @@
                                 <speed>50</speed>
                                 <acceleration>0</acceleration>
                                 <gravity>0</gravity>
-                                <bounce-off-solids>No</bounce-off-solids>
+                                <bounce-off-solids>Yes</bounce-off-solids>
                                 <set-angle>No</set-angle>
                                 <initial-state>Disabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Timer" />
                         <behavior-instance type="ShadowCaster">
                             <properties>
                                 <initial-state>Enabled</initial-state>
@@ -952,11 +962,12 @@
                                 <speed>50</speed>
                                 <acceleration>0</acceleration>
                                 <gravity>0</gravity>
-                                <bounce-off-solids>No</bounce-off-solids>
+                                <bounce-off-solids>Yes</bounce-off-solids>
                                 <set-angle>No</set-angle>
                                 <initial-state>Disabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Timer" />
                         <behavior-instance type="ShadowCaster">
                             <properties>
                                 <initial-state>Enabled</initial-state>
@@ -1024,11 +1035,12 @@
                                 <speed>50</speed>
                                 <acceleration>0</acceleration>
                                 <gravity>0</gravity>
-                                <bounce-off-solids>No</bounce-off-solids>
+                                <bounce-off-solids>Yes</bounce-off-solids>
                                 <set-angle>No</set-angle>
                                 <initial-state>Disabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Timer" />
                         <behavior-instance type="ShadowCaster">
                             <properties>
                                 <initial-state>Enabled</initial-state>
@@ -1096,11 +1108,12 @@
                                 <speed>50</speed>
                                 <acceleration>0</acceleration>
                                 <gravity>0</gravity>
-                                <bounce-off-solids>No</bounce-off-solids>
+                                <bounce-off-solids>Yes</bounce-off-solids>
                                 <set-angle>No</set-angle>
                                 <initial-state>Disabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Timer" />
                         <behavior-instance type="ShadowCaster">
                             <properties>
                                 <initial-state>Enabled</initial-state>
@@ -1168,11 +1181,12 @@
                                 <speed>50</speed>
                                 <acceleration>0</acceleration>
                                 <gravity>0</gravity>
-                                <bounce-off-solids>No</bounce-off-solids>
+                                <bounce-off-solids>Yes</bounce-off-solids>
                                 <set-angle>No</set-angle>
                                 <initial-state>Disabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Timer" />
                         <behavior-instance type="ShadowCaster">
                             <properties>
                                 <initial-state>Enabled</initial-state>
@@ -1240,11 +1254,12 @@
                                 <speed>50</speed>
                                 <acceleration>0</acceleration>
                                 <gravity>0</gravity>
-                                <bounce-off-solids>No</bounce-off-solids>
+                                <bounce-off-solids>Yes</bounce-off-solids>
                                 <set-angle>No</set-angle>
                                 <initial-state>Disabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Timer" />
                         <behavior-instance type="ShadowCaster">
                             <properties>
                                 <initial-state>Enabled</initial-state>
@@ -1312,11 +1327,12 @@
                                 <speed>50</speed>
                                 <acceleration>0</acceleration>
                                 <gravity>0</gravity>
-                                <bounce-off-solids>No</bounce-off-solids>
+                                <bounce-off-solids>Yes</bounce-off-solids>
                                 <set-angle>No</set-angle>
                                 <initial-state>Disabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Timer" />
                         <behavior-instance type="ShadowCaster">
                             <properties>
                                 <initial-state>Enabled</initial-state>
@@ -1474,11 +1490,12 @@
                                 <speed>50</speed>
                                 <acceleration>0</acceleration>
                                 <gravity>0</gravity>
-                                <bounce-off-solids>No</bounce-off-solids>
+                                <bounce-off-solids>Yes</bounce-off-solids>
                                 <set-angle>No</set-angle>
                                 <initial-state>Disabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Timer" />
                         <behavior-instance type="ShadowCaster">
                             <properties>
                                 <initial-state>Enabled</initial-state>

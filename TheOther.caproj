@@ -238,6 +238,9 @@
                 <behavior-type name="Bullet" sid="147484201447102">
                     <behavior id="Bullet" />
                 </behavior-type>
+                <behavior-type name="Timer" sid="913789353172334">
+                    <behavior id="Timer" />
+                </behavior-type>
             </behaviors>
         </family>
     </families>
