@@ -26,6 +26,14 @@
                 <action id="0" name="Set text" sid="526657349371729" type="final">
                     <param id="0" name="Text">&quot;Score: &quot;&amp;finalScore</param>
                 </action>
+                <action behavior="Flash" id="0" name="Flash" sid="566653312196468" type="Title">
+                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                    <param id="2" name="Duration">3</param>
+                </action>
+                <action id="0" name="Set text" sid="286582165998709" type="Title">
+                    <param id="0" name="Text">&quot;The End: TIME OUT&quot;</param>
+                </action>
             </actions>
         </event-block>
     </events>

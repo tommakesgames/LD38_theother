@@ -292,6 +292,11 @@
         </object-type>
         <object-type name="Title" sid="432856301116872">
             <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Flash" sid="964432044174013">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
         </object-type>
         <object-type name="Text2" sid="420647857109636">
             <plugin id="Text" />
