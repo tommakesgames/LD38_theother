@@ -258,7 +258,7 @@
             <plugin id="TiledBg" />
             <texture />
         </object-type>
-        <object-type name="TiledBackground2" sid="396590169378855">
+        <object-type name="UILine" sid="396590169378855">
             <plugin id="TiledBg" />
             <texture />
         </object-type>
@@ -335,6 +335,10 @@
         </object-type>
         <object-type name="final" sid="187023763331948">
             <plugin id="Text" />
+        </object-type>
+        <object-type name="innerWall" sid="673335791368822">
+            <plugin id="TiledBg" />
+            <texture />
         </object-type>
     </object-folder>
     <families>
