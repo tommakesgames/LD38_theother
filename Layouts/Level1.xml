@@ -4,8 +4,8 @@
     <sid>8873350371196689</sid>
     <event-sheet>Level1</event-sheet>
     <size>
-        <width>1920</width>
-        <height>1440</height>
+        <width>1280</width>
+        <height>960</height>
     </size>
     <margins>
         <horizontal>500</horizontal>
@@ -40,8 +40,8 @@
                         <x>0</x>
                         <y>0</y>
                         <z>0</z>
-                        <width>1920</width>
-                        <height>1440</height>
+                        <width>1280</width>
+                        <height>960</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -79,7 +79,7 @@
                         <x>32</x>
                         <y>224</y>
                         <z>0</z>
-                        <width>384</width>
+                        <width>256</width>
                         <height>32</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
@@ -96,10 +96,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>416</x>
+                        <x>384</x>
                         <y>224</y>
                         <z>0</z>
-                        <width>384</width>
+                        <width>416</width>
                         <height>32</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
@@ -136,10 +136,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-320</x>
-                        <y>0</y>
+                        <x>224</x>
+                        <y>160</y>
                         <z>0</z>
-                        <width>96</width>
+                        <width>64</width>
                         <height>32</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
@@ -165,6 +165,206 @@
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
                         <angle>1.570796371</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="innerWall" uid="15">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>544</x>
+                        <y>352</y>
+                        <z>0</z>
+                        <width>384</width>
+                        <height>32</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="innerWall" uid="16">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>32</x>
+                        <y>672</y>
+                        <z>0</z>
+                        <width>224</width>
+                        <height>32</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="innerWall" uid="17">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>256</x>
+                        <y>800</y>
+                        <z>0</z>
+                        <width>128</width>
+                        <height>32</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>1.570796371</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="innerWall" uid="19">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>448</x>
+                        <y>608</y>
+                        <z>0</z>
+                        <width>288</width>
+                        <height>32</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="innerWall" uid="20">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>608</x>
+                        <y>480</y>
+                        <z>0</z>
+                        <width>128</width>
+                        <height>32</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>1.570796371</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="innerWall" uid="21">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>928</x>
+                        <y>384</y>
+                        <z>0</z>
+                        <width>128</width>
+                        <height>32</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>1.570796371</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="innerWall" uid="22">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>800</x>
+                        <y>160</y>
+                        <z>0</z>
+                        <width>96</width>
+                        <height>32</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>1.570796371</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="innerWall" uid="23">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1024</x>
+                        <y>224</y>
+                        <z>0</z>
+                        <width>224</width>
+                        <height>32</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="innerWall" uid="24">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>736</x>
+                        <y>608</y>
+                        <z>0</z>
+                        <width>128</width>
+                        <height>32</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>1.570796371</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="innerWall" uid="35">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>960</x>
+                        <y>800</y>
+                        <z>0</z>
+                        <width>288</width>
+                        <height>32</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
@@ -204,8 +404,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>326</x>
-                        <y>534</y>
+                        <x>640</x>
+                        <y>576</y>
                         <z>0</z>
                         <width>64</width>
                         <height>64</height>
@@ -616,13 +816,13 @@
                         <line-height>0</line-height>
                     </properties>
                     <instance-variables>
-                        <letter>A</letter>
+                        <letter>R</letter>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>131</x>
-                        <y>539</y>
+                        <x>96</x>
+                        <y>768</y>
                         <z>0</z>
                         <width>44</width>
                         <height>38</height>
@@ -635,7 +835,7 @@
                 </instance>
                 <instance type="Letter" uid="30">
                     <properties>
-                        <text>1</text>
+                        <text>B</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Beeb,-32,700,0</font>
                         <color>0,0,0</color>
@@ -651,8 +851,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>270</x>
-                        <y>114</y>
+                        <x>128</x>
+                        <y>96</y>
                         <z>0</z>
                         <width>44</width>
                         <height>38</height>
@@ -676,13 +876,13 @@
                         <line-height>0</line-height>
                     </properties>
                     <instance-variables>
-                        <letter>C</letter>
+                        <letter>E</letter>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>572</x>
-                        <y>426</y>
+                        <x>640</x>
+                        <y>288</y>
                         <z>0</z>
                         <width>44</width>
                         <height>38</height>
@@ -847,7 +1047,7 @@
                         <x>0</x>
                         <y>0</y>
                         <z>0</z>
-                        <width>1920</width>
+                        <width>1280</width>
                         <height>50</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
@@ -872,9 +1072,9 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>0</x>
-                        <y>1390</y>
+                        <y>928</y>
                         <z>0</z>
-                        <width>1920</width>
+                        <width>1280</width>
                         <height>50</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
@@ -902,7 +1102,7 @@
                         <y>0</y>
                         <z>0</z>
                         <width>50</width>
-                        <height>1440</height>
+                        <height>960</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -925,11 +1125,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1870</x>
+                        <x>1234</x>
                         <y>0</y>
                         <z>0</z>
-                        <width>50</width>
-                        <height>1440</height>
+                        <width>64</width>
+                        <height>960</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -988,6 +1188,96 @@
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Letter" uid="36">
+                    <properties>
+                        <text>1</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Beeb,-32,700,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <instance-variables>
+                        <letter>X</letter>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>822</x>
+                        <y>432</y>
+                        <z>0</z>
+                        <width>44</width>
+                        <height>38</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Letter" uid="37">
+                    <properties>
+                        <text>1</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Beeb,-32,700,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <instance-variables>
+                        <letter>I</letter>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>798</x>
+                        <y>663</y>
+                        <z>0</z>
+                        <width>44</width>
+                        <height>38</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Letter" uid="58">
+                    <properties>
+                        <text>1</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Beeb,-32,700,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <instance-variables>
+                        <letter>T</letter>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1045</x>
+                        <y>320</y>
+                        <z>0</z>
+                        <width>44</width>
+                        <height>38</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -1085,7 +1375,7 @@
                         <line-height>0</line-height>
                     </properties>
                     <instance-variables>
-                        <letter>A</letter>
+                        <letter>R</letter>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -1115,12 +1405,12 @@
                         <line-height>0</line-height>
                     </properties>
                     <instance-variables>
-                        <letter>B</letter>
+                        <letter>E</letter>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>296.5</x>
+                        <x>297.751800537</x>
                         <y>6.852722168</y>
                         <z>0</z>
                         <width>44</width>
@@ -1145,7 +1435,7 @@
                         <line-height>0</line-height>
                     </properties>
                     <instance-variables>
-                        <letter>C</letter>
+                        <letter>X</letter>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -1202,6 +1492,96 @@
                         <z>0</z>
                         <width>83.585632324</width>
                         <height>39.292808533</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Letter_display" uid="38">
+                    <properties>
+                        <text>_</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Beeb,-32,700,0</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <instance-variables>
+                        <letter>B</letter>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>203.006546021</x>
+                        <y>6.8527174</y>
+                        <z>0</z>
+                        <width>44</width>
+                        <height>38</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Letter_display" uid="57">
+                    <properties>
+                        <text>_</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Beeb,-32,700,0</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <instance-variables>
+                        <letter>I</letter>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>386.958068848</x>
+                        <y>6.852722168</y>
+                        <z>0</z>
+                        <width>44</width>
+                        <height>38</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Letter_display" uid="59">
+                    <properties>
+                        <text>_</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Beeb,-32,700,0</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <instance-variables>
+                        <letter>T</letter>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>428.63269043</x>
+                        <y>6.852722168</y>
+                        <z>0</z>
+                        <width>44</width>
+                        <height>38</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>

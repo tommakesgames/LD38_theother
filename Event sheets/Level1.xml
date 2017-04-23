@@ -129,6 +129,10 @@
                             <param id="0" name="Pin to">player</param>
                             <param id="1" name="Mode">1</param>
                         </action>
+                        <action id="4" name="Set animation" sid="669526035161170" type="arrow">
+                            <param id="0" name="Animation">&quot;PickupArrow&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="368105805745685">
@@ -378,6 +382,10 @@
                             <param id="2" name="Loop">0</param>
                             <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="514189845372766" type="arrow">
+                            <param id="0" name="Animation">&quot;exitArrow&quot;</param>
+                            <param id="1" name="From">1</param>
                         </action>
                     </actions>
                 </event-block>
