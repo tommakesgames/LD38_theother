@@ -111,6 +111,14 @@
                             <param id="0" name="Animation">&quot;closed&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="-4" name="Set position to another object" sid="451986168562686" type="arrow">
+                            <param id="0" name="Object">player</param>
+                            <param id="1" name="Image point (optional)">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="795135483707335" type="arrow">
+                            <param id="0" name="Pin to">player</param>
+                            <param id="1" name="Mode">1</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="368105805745685">
@@ -797,42 +805,74 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="497968516168222">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="372763608855317" type="player">
-                    <param id="0" name="Object">exit</param>
-                </condition>
-            </conditions>
-            <actions />
+        <event-group description="" sid="744730707452746" title="Exit">
             <sub-events>
-                <event-block sid="843927621359768">
+                <event-block sid="497968516168222">
                     <conditions>
-                        <condition id="2" name="Is playing" sid="492884480677798" type="exit">
-                            <param id="0" name="Animation">&quot;open&quot;</param>
+                        <condition id="0" name="On collision with another object" sid="372763608855317" type="player">
+                            <param id="0" name="Object">exit</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action id="-43" name="Go to next/previous layout" sid="703587026359772" type="System">
-                            <param id="0" name="Which">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="187336035341846">
-                    <conditions>
-                        <condition id="2" name="Is playing" sid="527882462494718" type="exit">
-                            <param id="0" name="Animation">&quot;closed&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Play" sid="233495447422506" type="Audio">
-                            <param id="0" name="Audio file">doorblock</param>
-                            <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                        </action>
-                    </actions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="843927621359768">
+                            <conditions>
+                                <condition id="2" name="Is playing" sid="492884480677798" type="exit">
+                                    <param id="0" name="Animation">&quot;open&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-43" name="Go to next/previous layout" sid="703587026359772" type="System">
+                                    <param id="0" name="Which">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="187336035341846">
+                            <conditions>
+                                <condition id="2" name="Is playing" sid="527882462494718" type="exit">
+                                    <param id="0" name="Animation">&quot;closed&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="233495447422506" type="Audio">
+                                    <param id="0" name="Audio file">doorblock</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
+        </event-group>
+        <event-block sid="417849131763527">
+            <conditions>
+                <condition id="-15" name="Pick nearest/furthest" sid="225664130447549" type="Letter">
+                    <param id="0" name="Which">0</param>
+                    <param id="1" name="X">player.X</param>
+                    <param id="2" name="Y">player.Y</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-8" name="Set angle" sid="144929345535344" type="arrow">
+                    <param id="0" name="Angle">angle(player.X, player.Y, Letter.X, Letter.Y)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="713188829275681">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="426871871750700" type="System">
+                    <param id="0" name="First value">Letter.Count</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-8" name="Set angle" sid="921395356795014" type="arrow">
+                    <param id="0" name="Angle">angle(player.X, player.Y, exit.X, exit.Y)</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>
