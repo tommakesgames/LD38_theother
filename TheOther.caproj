@@ -21,6 +21,7 @@
         <plugin author="Scirra" id="shadowlight" version="1">Shadow Light</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
@@ -233,6 +234,9 @@
                 </behavior-type>
                 <behavior-type name="SideRotate" sid="657825111704082">
                     <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="147484201447102">
+                    <behavior id="Bullet" />
                 </behavior-type>
             </behaviors>
         </family>

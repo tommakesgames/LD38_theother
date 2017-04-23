@@ -123,6 +123,16 @@
                                 <magnitude-random>5</magnitude-random>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>50</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>No</set-angle>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
                         <behavior-instance type="ShadowCaster">
                             <properties>
                                 <initial-state>Enabled</initial-state>
@@ -139,8 +149,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>292</x>
-                        <y>355</y>
+                        <x>297</x>
+                        <y>344</y>
                         <z>0</z>
                         <width>32</width>
                         <height>32</height>
@@ -183,6 +193,16 @@
                                 <period-offset-random>0.5</period-offset-random>
                                 <magnitude>5</magnitude>
                                 <magnitude-random>5</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>50</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>No</set-angle>
+                                <initial-state>Disabled</initial-state>
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="ShadowCaster">
@@ -245,6 +265,16 @@
                                 <period-offset-random>0.5</period-offset-random>
                                 <magnitude>5</magnitude>
                                 <magnitude-random>5</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>50</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>No</set-angle>
+                                <initial-state>Disabled</initial-state>
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="ShadowCaster">
@@ -385,6 +415,16 @@
                                 <magnitude-random>5</magnitude-random>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>50</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>No</set-angle>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
                         <behavior-instance type="ShadowCaster">
                             <properties>
                                 <initial-state>Enabled</initial-state>
@@ -445,6 +485,16 @@
                                 <period-offset-random>0.5</period-offset-random>
                                 <magnitude>5</magnitude>
                                 <magnitude-random>5</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>50</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>No</set-angle>
+                                <initial-state>Disabled</initial-state>
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="ShadowCaster">
@@ -509,6 +559,16 @@
                                 <magnitude-random>5</magnitude-random>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>50</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>No</set-angle>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
                         <behavior-instance type="ShadowCaster">
                             <properties>
                                 <initial-state>Enabled</initial-state>
@@ -569,6 +629,16 @@
                                 <period-offset-random>0.5</period-offset-random>
                                 <magnitude>5</magnitude>
                                 <magnitude-random>5</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>50</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>No</set-angle>
+                                <initial-state>Disabled</initial-state>
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="ShadowCaster">
@@ -633,6 +703,16 @@
                                 <magnitude-random>5</magnitude-random>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>50</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>No</set-angle>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
                         <behavior-instance type="ShadowCaster">
                             <properties>
                                 <initial-state>Enabled</initial-state>
@@ -695,6 +775,16 @@
                                 <magnitude-random>5</magnitude-random>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>50</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>No</set-angle>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
                         <behavior-instance type="ShadowCaster">
                             <properties>
                                 <initial-state>Enabled</initial-state>
@@ -755,6 +845,16 @@
                                 <period-offset-random>0.5</period-offset-random>
                                 <magnitude>5</magnitude>
                                 <magnitude-random>5</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>50</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>No</set-angle>
+                                <initial-state>Disabled</initial-state>
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="ShadowCaster">
@@ -847,6 +947,16 @@
                                 <magnitude-random>5</magnitude-random>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>50</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>No</set-angle>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
                         <behavior-instance type="ShadowCaster">
                             <properties>
                                 <initial-state>Enabled</initial-state>
@@ -907,6 +1017,16 @@
                                 <period-offset-random>0.5</period-offset-random>
                                 <magnitude>5</magnitude>
                                 <magnitude-random>5</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>50</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>No</set-angle>
+                                <initial-state>Disabled</initial-state>
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="ShadowCaster">
@@ -971,6 +1091,16 @@
                                 <magnitude-random>5</magnitude-random>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>50</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>No</set-angle>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
                         <behavior-instance type="ShadowCaster">
                             <properties>
                                 <initial-state>Enabled</initial-state>
@@ -1031,6 +1161,16 @@
                                 <period-offset-random>0.5</period-offset-random>
                                 <magnitude>5</magnitude>
                                 <magnitude-random>5</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>50</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>No</set-angle>
+                                <initial-state>Disabled</initial-state>
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="ShadowCaster">
@@ -1095,6 +1235,16 @@
                                 <magnitude-random>5</magnitude-random>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>50</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>No</set-angle>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
                         <behavior-instance type="ShadowCaster">
                             <properties>
                                 <initial-state>Enabled</initial-state>
@@ -1111,8 +1261,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>444</x>
-                        <y>565</y>
+                        <x>440</x>
+                        <y>557</y>
                         <z>0</z>
                         <width>32</width>
                         <height>32</height>
@@ -1155,6 +1305,16 @@
                                 <period-offset-random>0.5</period-offset-random>
                                 <magnitude>5</magnitude>
                                 <magnitude-random>5</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>50</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>No</set-angle>
+                                <initial-state>Disabled</initial-state>
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="ShadowCaster">
@@ -1307,6 +1467,16 @@
                                 <period-offset-random>0.5</period-offset-random>
                                 <magnitude>5</magnitude>
                                 <magnitude-random>5</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>50</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>No</set-angle>
+                                <initial-state>Disabled</initial-state>
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="ShadowCaster">
