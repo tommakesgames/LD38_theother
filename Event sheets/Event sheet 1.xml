@@ -3,16 +3,18 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
+        <variable comment="How shake atic decreases by when you say hello" constant="0" name="shakeSubstraction" sid="734979746222153" static="0" type="number">10</variable>
+        <variable constant="0" name="shoutGrayscale" sid="276204648380167" static="0" type="number">20</variable>
         <variable constant="0" name="helloGrayscaleNo" sid="799044145178545" static="0" type="number">10</variable>
-        <variable constant="0" name="friendDistance" sid="106722928681137" static="0" type="number">75</variable>
-        <variable constant="0" name="helloLightIncrement" sid="656965288450362" static="0" type="number">20</variable>
-        <variable constant="0" name="shoutLightIncrement" sid="162820223442331" static="0" type="number">10</variable>
+        <variable constant="0" name="friendDistance" sid="106722928681137" static="0" type="number">120</variable>
+        <variable constant="0" name="helloLightIncrement" sid="656965288450362" static="0" type="number">50</variable>
+        <variable constant="0" name="shoutLightIncrement" sid="162820223442331" static="0" type="number">50</variable>
         <variable constant="0" name="playerLightSize" sid="625369903975262" static="0" type="number">320</variable>
         <variable comment="Time that shout appears before moving off screen again" constant="0" name="shoutTime" sid="985385078439286" static="0" type="number">0.8</variable>
         <variable constant="0" name="initialStaticVolume" sid="468792055856604" static="0" type="number">-5</variable>
         <variable constant="0" name="staticVolume" sid="287861013927092" static="0" type="number">-5</variable>
         <variable constant="0" name="initialShake" sid="610507537245482" static="0" type="number">30</variable>
-        <variable comment="How far till screen shakes" constant="0" name="enemyDistance" sid="755956645796748" static="0" type="number">100</variable>
+        <variable comment="How far till screen shakes" constant="0" name="enemyShakeDistance" sid="755956645796748" static="0" type="number">100</variable>
         <event-group description="" sid="361759795033423" title="Debug">
             <sub-events>
                 <event-block sid="800314739356174">
@@ -80,7 +82,7 @@
                         </action>
                         <action behavior="Pin" id="0" name="Pin to object" sid="281484735980116" type="debug_text">
                             <param id="0" name="Pin to">player</param>
-                            <param id="1" name="Mode">0</param>
+                            <param id="1" name="Mode">1</param>
                         </action>
                         <action id="-4" name="Set position to another object" sid="481027644300772" type="shout">
                             <param id="0" name="Object">player</param>
@@ -314,18 +316,6 @@
         </event-group>
         <event-group description="" sid="232648293782727" title="Shout">
             <sub-events>
-                <event-block sid="242414964219901">
-                    <conditions>
-                        <condition behavior="Timer" id="0" name="On timer" sid="395907953166935" type="people">
-                            <param id="0" name="Tag">&quot;shoutedAt&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="Bullet" id="5" name="Set enabled" sid="572987932205561" type="people">
-                            <param id="0" name="State">0</param>
-                        </action>
-                    </actions>
-                </event-block>
                 <event-block sid="101990739127220">
                     <conditions>
                         <condition id="0" name="On key pressed" sid="917084486669438" type="Keyboard">
@@ -383,7 +373,7 @@
                                         <condition id="-8" name="Compare two values" sid="808944485125265" type="System">
                                             <param id="0" name="First value">distance(player.X, player.Y, people.X, people.Y)</param>
                                             <param id="1" name="Comparison">3</param>
-                                            <param id="2" name="Second value">enemyDistance</param>
+                                            <param id="2" name="Second value">enemyShakeDistance</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -399,10 +389,96 @@
                                             <param id="2" name="Tag">&quot;shoutedAt&quot;</param>
                                         </action>
                                     </actions>
+                                    <sub-events>
+                                        <event-block sid="434141212160637">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="297534082781147" type="people">
+                                                    <param id="0" name="Instance variable">grayscaleNo</param>
+                                                    <param id="1" name="Comparison">2</param>
+                                                    <param id="2" name="Value">100</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions />
+                                            <sub-events>
+                                                <event-block sid="963446365881218">
+                                                    <conditions>
+                                                        <condition id="-7" name="Compare instance variable" sid="813111162013239" type="people">
+                                                            <param id="0" name="Instance variable">group</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">1</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-11" name="Add to" sid="136849667814905" type="group1">
+                                                            <param id="0" name="Instance variable">grayscaleNo</param>
+                                                            <param id="1" name="Value">shoutGrayscale</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="829779855962883">
+                                                    <conditions>
+                                                        <condition id="-7" name="Compare instance variable" sid="714392715605858" type="people">
+                                                            <param id="0" name="Instance variable">group</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">2</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-11" name="Add to" sid="820625918407522" type="group2">
+                                                            <param id="0" name="Instance variable">grayscaleNo</param>
+                                                            <param id="1" name="Value">shoutGrayscale</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="410328931020346">
+                                                    <conditions>
+                                                        <condition id="-7" name="Compare instance variable" sid="460547250803613" type="people">
+                                                            <param id="0" name="Instance variable">group</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">3</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-11" name="Add to" sid="276565933544967" type="group3">
+                                                            <param id="0" name="Instance variable">grayscaleNo</param>
+                                                            <param id="1" name="Value">shoutGrayscale</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="714737741360643">
+                                                    <conditions>
+                                                        <condition id="-7" name="Compare instance variable" sid="511361014731845" type="people">
+                                                            <param id="0" name="Instance variable">group</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">4</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-11" name="Add to" sid="773513534619253" type="group4">
+                                                            <param id="0" name="Instance variable">grayscaleNo</param>
+                                                            <param id="1" name="Value">shoutGrayscale</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                             </sub-events>
                         </event-block>
                     </sub-events>
+                </event-block>
+                <event-block sid="242414964219901">
+                    <conditions>
+                        <condition behavior="Timer" id="0" name="On timer" sid="395907953166935" type="people">
+                            <param id="0" name="Tag">&quot;shoutedAt&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="572987932205561" type="people">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
                 </event-block>
                 <event-block sid="691557155677529">
                     <conditions>
@@ -429,7 +505,7 @@
                     <actions>
                         <action id="-10" name="Add to" sid="968776532325154" type="System">
                             <param id="0" name="Variable">playerLightSize</param>
-                            <param id="1" name="Value">helloLightIncrement*0.75</param>
+                            <param id="1" name="Value">helloLightIncrement</param>
                         </action>
                     </actions>
                     <sub-events>
@@ -472,65 +548,93 @@
                                     </conditions>
                                     <actions />
                                     <sub-events>
-                                        <event-block sid="621922667329682">
+                                        <event-block sid="236199612225998">
                                             <conditions>
-                                                <condition id="-7" name="Compare instance variable" sid="902723706615918" type="people">
-                                                    <param id="0" name="Instance variable">group</param>
-                                                    <param id="1" name="Comparison">0</param>
-                                                    <param id="2" name="Value">1</param>
+                                                <condition id="-7" name="Compare instance variable" sid="347835323252156" type="people">
+                                                    <param id="0" name="Instance variable">grayscaleNo</param>
+                                                    <param id="1" name="Comparison">4</param>
+                                                    <param id="2" name="Value">0</param>
                                                 </condition>
                                             </conditions>
-                                            <actions>
-                                                <action id="-12" name="Subtract from" sid="235910846344504" type="group1">
-                                                    <param id="0" name="Instance variable">grayscaleNo</param>
-                                                    <param id="1" name="Value">helloGrayscaleNo</param>
-                                                </action>
-                                            </actions>
-                                        </event-block>
-                                        <event-block sid="979515094035176">
-                                            <conditions>
-                                                <condition id="-7" name="Compare instance variable" sid="994453207725222" type="people">
-                                                    <param id="0" name="Instance variable">group</param>
-                                                    <param id="1" name="Comparison">0</param>
-                                                    <param id="2" name="Value">2</param>
-                                                </condition>
-                                            </conditions>
-                                            <actions>
-                                                <action id="-12" name="Subtract from" sid="382947102250825" type="group2">
-                                                    <param id="0" name="Instance variable">grayscaleNo</param>
-                                                    <param id="1" name="Value">helloGrayscaleNo</param>
-                                                </action>
-                                            </actions>
-                                        </event-block>
-                                        <event-block sid="244526103069364">
-                                            <conditions>
-                                                <condition id="-7" name="Compare instance variable" sid="358282995331449" type="people">
-                                                    <param id="0" name="Instance variable">group</param>
-                                                    <param id="1" name="Comparison">0</param>
-                                                    <param id="2" name="Value">3</param>
-                                                </condition>
-                                            </conditions>
-                                            <actions>
-                                                <action id="-12" name="Subtract from" sid="174703852406840" type="group3">
-                                                    <param id="0" name="Instance variable">grayscaleNo</param>
-                                                    <param id="1" name="Value">helloGrayscaleNo</param>
-                                                </action>
-                                            </actions>
-                                        </event-block>
-                                        <event-block sid="829942820353801">
-                                            <conditions>
-                                                <condition id="-7" name="Compare instance variable" sid="317772013581212" type="people">
-                                                    <param id="0" name="Instance variable">group</param>
-                                                    <param id="1" name="Comparison">0</param>
-                                                    <param id="2" name="Value">4</param>
-                                                </condition>
-                                            </conditions>
-                                            <actions>
-                                                <action id="-12" name="Subtract from" sid="566912805496653" type="group4">
-                                                    <param id="0" name="Instance variable">grayscaleNo</param>
-                                                    <param id="1" name="Value">helloGrayscaleNo</param>
-                                                </action>
-                                            </actions>
+                                            <actions />
+                                            <sub-events>
+                                                <event-block sid="621922667329682">
+                                                    <conditions>
+                                                        <condition id="-7" name="Compare instance variable" sid="902723706615918" type="people">
+                                                            <param id="0" name="Instance variable">group</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">1</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-12" name="Subtract from" sid="235910846344504" type="group1">
+                                                            <param id="0" name="Instance variable">grayscaleNo</param>
+                                                            <param id="1" name="Value">helloGrayscaleNo</param>
+                                                        </action>
+                                                        <action id="-12" name="Subtract from" sid="585028202569187" type="group1">
+                                                            <param id="0" name="Instance variable">shake</param>
+                                                            <param id="1" name="Value">shakeSubstraction</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="979515094035176">
+                                                    <conditions>
+                                                        <condition id="-7" name="Compare instance variable" sid="994453207725222" type="people">
+                                                            <param id="0" name="Instance variable">group</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">2</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-12" name="Subtract from" sid="382947102250825" type="group2">
+                                                            <param id="0" name="Instance variable">grayscaleNo</param>
+                                                            <param id="1" name="Value">helloGrayscaleNo</param>
+                                                        </action>
+                                                        <action id="-12" name="Subtract from" sid="178719917472455" type="group2">
+                                                            <param id="0" name="Instance variable">shake</param>
+                                                            <param id="1" name="Value">shakeSubstraction</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="244526103069364">
+                                                    <conditions>
+                                                        <condition id="-7" name="Compare instance variable" sid="358282995331449" type="people">
+                                                            <param id="0" name="Instance variable">group</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">3</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-12" name="Subtract from" sid="174703852406840" type="group3">
+                                                            <param id="0" name="Instance variable">grayscaleNo</param>
+                                                            <param id="1" name="Value">helloGrayscaleNo</param>
+                                                        </action>
+                                                        <action id="-12" name="Subtract from" sid="631781462832818" type="group3">
+                                                            <param id="0" name="Instance variable">shake</param>
+                                                            <param id="1" name="Value">shakeSubstraction</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="829942820353801">
+                                                    <conditions>
+                                                        <condition id="-7" name="Compare instance variable" sid="317772013581212" type="people">
+                                                            <param id="0" name="Instance variable">group</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">4</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-12" name="Subtract from" sid="566912805496653" type="group4">
+                                                            <param id="0" name="Instance variable">grayscaleNo</param>
+                                                            <param id="1" name="Value">helloGrayscaleNo</param>
+                                                        </action>
+                                                        <action id="-12" name="Subtract from" sid="188352690392817" type="group4">
+                                                            <param id="0" name="Instance variable">shake</param>
+                                                            <param id="1" name="Value">shakeSubstraction</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
                                         </event-block>
                                     </sub-events>
                                 </event-block>
