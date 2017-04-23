@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
-    <name>Event sheet 1</name>
+    <name>Level1</name>
     <events>
         <variable constant="0" name="timeLeft" sid="315727437506435" static="0" type="number">60</variable>
         <variable comment="How shake atic decreases by when you say hello" constant="0" name="shakeSubstraction" sid="734979746222153" static="0" type="number">10</variable>
@@ -311,6 +311,30 @@
                         </action>
                         <action id="0" name="Play" sid="109541593899745" type="Audio">
                             <param id="0" name="Audio file">pickup</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;pickup&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="854496736135437">
+                    <conditions>
+                        <condition id="0" name="On ended" sid="634572920435278" type="Audio">
+                            <param id="0" name="Tag">&quot;pickup&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="369496269444408" type="System">
+                            <param id="0" name="First value">Letter.Count</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="569791923532160" type="exit">
+                            <param id="0" name="Animation">&quot;open&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="635938684904219" type="Audio">
+                            <param id="0" name="Audio file">doorOpen</param>
                             <param id="2" name="Loop">0</param>
                             <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
@@ -721,20 +745,42 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="614109481517058">
+        <event-block sid="497968516168222">
             <conditions>
-                <condition id="-8" name="Compare two values" sid="363949476602122" type="System">
-                    <param id="0" name="First value">Letter.Count</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Second value">0</param>
+                <condition id="0" name="On collision with another object" sid="372763608855317" type="player">
+                    <param id="0" name="Object">exit</param>
                 </condition>
             </conditions>
-            <actions>
-                <action id="4" name="Set animation" sid="121154352542535" type="exit">
-                    <param id="0" name="Animation">&quot;open&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-            </actions>
+            <actions />
+            <sub-events>
+                <event-block sid="843927621359768">
+                    <conditions>
+                        <condition id="2" name="Is playing" sid="492884480677798" type="exit">
+                            <param id="0" name="Animation">&quot;open&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-43" name="Go to next/previous layout" sid="703587026359772" type="System">
+                            <param id="0" name="Which">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="187336035341846">
+                    <conditions>
+                        <condition id="2" name="Is playing" sid="527882462494718" type="exit">
+                            <param id="0" name="Animation">&quot;closed&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="233495447422506" type="Audio">
+                            <param id="0" name="Audio file">doorblock</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>
