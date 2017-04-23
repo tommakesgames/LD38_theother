@@ -89,13 +89,19 @@
                         <opacity>0.300000012</opacity>
                     </world>
                 </instance>
-                <instance type="people" uid="2">
+                <instance type="group1" uid="2">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <grayscaleNo>100</grayscaleNo>
+                        <group>1</group>
+                        <isEnemy>true</isEnemy>
+                        <shake>30</shake>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="UpDownJump">
                             <properties>
@@ -169,13 +175,19 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="people" uid="3">
+                <instance type="group1" uid="3">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <grayscaleNo>100</grayscaleNo>
+                        <group>1</group>
+                        <isEnemy>true</isEnemy>
+                        <shake>30</shake>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="UpDownJump">
                             <properties>
@@ -249,13 +261,19 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="people" uid="4">
+                <instance type="group1" uid="4">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <grayscaleNo>100</grayscaleNo>
+                        <group>1</group>
+                        <isEnemy>true</isEnemy>
+                        <shake>30</shake>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="UpDownJump">
                             <properties>
@@ -405,13 +423,19 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="people2" uid="13">
+                <instance type="group2" uid="13">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <grayscaleNo>100</grayscaleNo>
+                        <group>2</group>
+                        <isEnemy>true</isEnemy>
+                        <shake>30</shake>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="UpDownJump">
                             <properties>
@@ -485,13 +509,19 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="people2" uid="14">
+                <instance type="group2" uid="14">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <grayscaleNo>100</grayscaleNo>
+                        <group>2</group>
+                        <isEnemy>true</isEnemy>
+                        <shake>30</shake>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="UpDownJump">
                             <properties>
@@ -565,13 +595,19 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="people2" uid="15">
+                <instance type="group2" uid="15">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <grayscaleNo>100</grayscaleNo>
+                        <group>2</group>
+                        <isEnemy>true</isEnemy>
+                        <shake>30</shake>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="UpDownJump">
                             <properties>
@@ -645,13 +681,19 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="people2" uid="16">
+                <instance type="group2" uid="16">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <grayscaleNo>100</grayscaleNo>
+                        <group>2</group>
+                        <isEnemy>true</isEnemy>
+                        <shake>30</shake>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="UpDownJump">
                             <properties>
@@ -725,13 +767,19 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="people2" uid="17">
+                <instance type="group2" uid="17">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <grayscaleNo>100</grayscaleNo>
+                        <group>2</group>
+                        <isEnemy>true</isEnemy>
+                        <shake>30</shake>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="UpDownJump">
                             <properties>
@@ -805,13 +853,19 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="people" uid="18">
+                <instance type="group1" uid="18">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <grayscaleNo>100</grayscaleNo>
+                        <group>1</group>
+                        <isEnemy>true</isEnemy>
+                        <shake>30</shake>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="UpDownJump">
                             <properties>
@@ -885,13 +939,19 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="people" uid="19">
+                <instance type="group1" uid="19">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <grayscaleNo>100</grayscaleNo>
+                        <group>1</group>
+                        <isEnemy>true</isEnemy>
+                        <shake>30</shake>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="UpDownJump">
                             <properties>
@@ -993,13 +1053,19 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="people3" uid="20">
+                <instance type="group3" uid="20">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <grayscaleNo>100</grayscaleNo>
+                        <group>3</group>
+                        <isEnemy>true</isEnemy>
+                        <shake>30</shake>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="UpDownJump">
                             <properties>
@@ -1073,13 +1139,19 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="people3" uid="21">
+                <instance type="group3" uid="21">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <grayscaleNo>100</grayscaleNo>
+                        <group>3</group>
+                        <isEnemy>true</isEnemy>
+                        <shake>30</shake>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="UpDownJump">
                             <properties>
@@ -1153,13 +1225,19 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="people3" uid="22">
+                <instance type="group3" uid="22">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <grayscaleNo>100</grayscaleNo>
+                        <group>3</group>
+                        <isEnemy>true</isEnemy>
+                        <shake>30</shake>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="UpDownJump">
                             <properties>
@@ -1233,13 +1311,19 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="people3" uid="23">
+                <instance type="group3" uid="23">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <grayscaleNo>100</grayscaleNo>
+                        <group>3</group>
+                        <isEnemy>true</isEnemy>
+                        <shake>30</shake>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="UpDownJump">
                             <properties>
@@ -1313,13 +1397,19 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="people3" uid="24">
+                <instance type="group3" uid="24">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <grayscaleNo>100</grayscaleNo>
+                        <group>3</group>
+                        <isEnemy>true</isEnemy>
+                        <shake>30</shake>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="UpDownJump">
                             <properties>
@@ -1393,13 +1483,19 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="people3" uid="25">
+                <instance type="group3" uid="25">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <grayscaleNo>100</grayscaleNo>
+                        <group>3</group>
+                        <isEnemy>true</isEnemy>
+                        <shake>30</shake>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="UpDownJump">
                             <properties>
@@ -1563,13 +1659,19 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="people" uid="1">
+                <instance type="group1" uid="1">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <grayscaleNo>100</grayscaleNo>
+                        <group>1</group>
+                        <isEnemy>true</isEnemy>
+                        <shake>30</shake>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="UpDownJump">
                             <properties>
@@ -1668,48 +1770,54 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="people4" uid="35">
+                <instance type="group4" uid="35">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <grayscaleNo>100</grayscaleNo>
+                        <group>4</group>
+                        <isEnemy>true</isEnemy>
+                        <shake>30</shake>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="UpDownJump">
                             <properties>
                                 <active-on-start>Yes</active-on-start>
-                                <movement>Horizontal</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
-                                <period-random>0</period-random>
+                                <movement>Vertical</movement>
+                                <wave>Square</wave>
+                                <period>0.1</period>
+                                <period-random>0.2</period-random>
                                 <period-offset>0</period-offset>
-                                <period-offset-random>0</period-offset-random>
-                                <magnitude>50</magnitude>
-                                <magnitude-random>0</magnitude-random>
+                                <period-offset-random>0.15</period-offset-random>
+                                <magnitude>1</magnitude>
+                                <magnitude-random>2</magnitude-random>
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="SideRotate">
                             <properties>
                                 <active-on-start>Yes</active-on-start>
-                                <movement>Horizontal</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
-                                <period-random>0</period-random>
+                                <movement>Angle</movement>
+                                <wave>Square</wave>
+                                <period>0.25</period>
+                                <period-random>1</period-random>
                                 <period-offset>0</period-offset>
-                                <period-offset-random>0</period-offset-random>
-                                <magnitude>50</magnitude>
-                                <magnitude-random>0</magnitude-random>
+                                <period-offset-random>0.5</period-offset-random>
+                                <magnitude>5</magnitude>
+                                <magnitude-random>5</magnitude-random>
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="Bullet">
                             <properties>
-                                <speed>400</speed>
+                                <speed>50</speed>
                                 <acceleration>0</acceleration>
                                 <gravity>0</gravity>
-                                <bounce-off-solids>No</bounce-off-solids>
-                                <set-angle>Yes</set-angle>
-                                <initial-state>Enabled</initial-state>
+                                <bounce-off-solids>Yes</bounce-off-solids>
+                                <set-angle>No</set-angle>
+                                <initial-state>Disabled</initial-state>
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="Timer" />
@@ -1736,8 +1844,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>706</x>
-                        <y>434</y>
+                        <x>129</x>
+                        <y>112</y>
                         <z>0</z>
                         <width>32</width>
                         <height>32</height>
@@ -1748,48 +1856,54 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="people4" uid="36">
+                <instance type="group4" uid="36">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <grayscaleNo>100</grayscaleNo>
+                        <group>4</group>
+                        <isEnemy>true</isEnemy>
+                        <shake>30</shake>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="UpDownJump">
                             <properties>
                                 <active-on-start>Yes</active-on-start>
-                                <movement>Horizontal</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
-                                <period-random>0</period-random>
+                                <movement>Vertical</movement>
+                                <wave>Square</wave>
+                                <period>0.1</period>
+                                <period-random>0.2</period-random>
                                 <period-offset>0</period-offset>
-                                <period-offset-random>0</period-offset-random>
-                                <magnitude>50</magnitude>
-                                <magnitude-random>0</magnitude-random>
+                                <period-offset-random>0.15</period-offset-random>
+                                <magnitude>1</magnitude>
+                                <magnitude-random>2</magnitude-random>
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="SideRotate">
                             <properties>
                                 <active-on-start>Yes</active-on-start>
-                                <movement>Horizontal</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
-                                <period-random>0</period-random>
+                                <movement>Angle</movement>
+                                <wave>Square</wave>
+                                <period>0.25</period>
+                                <period-random>1</period-random>
                                 <period-offset>0</period-offset>
-                                <period-offset-random>0</period-offset-random>
-                                <magnitude>50</magnitude>
-                                <magnitude-random>0</magnitude-random>
+                                <period-offset-random>0.5</period-offset-random>
+                                <magnitude>5</magnitude>
+                                <magnitude-random>5</magnitude-random>
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="Bullet">
                             <properties>
-                                <speed>400</speed>
+                                <speed>50</speed>
                                 <acceleration>0</acceleration>
                                 <gravity>0</gravity>
-                                <bounce-off-solids>No</bounce-off-solids>
-                                <set-angle>Yes</set-angle>
-                                <initial-state>Enabled</initial-state>
+                                <bounce-off-solids>Yes</bounce-off-solids>
+                                <set-angle>No</set-angle>
+                                <initial-state>Disabled</initial-state>
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="Timer" />
@@ -1816,8 +1930,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>648</x>
-                        <y>461</y>
+                        <x>70</x>
+                        <y>139</y>
                         <z>0</z>
                         <width>32</width>
                         <height>32</height>
@@ -1828,48 +1942,54 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="people4" uid="37">
+                <instance type="group4" uid="37">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <grayscaleNo>100</grayscaleNo>
+                        <group>4</group>
+                        <isEnemy>true</isEnemy>
+                        <shake>30</shake>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="UpDownJump">
                             <properties>
                                 <active-on-start>Yes</active-on-start>
-                                <movement>Horizontal</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
-                                <period-random>0</period-random>
+                                <movement>Vertical</movement>
+                                <wave>Square</wave>
+                                <period>0.1</period>
+                                <period-random>0.2</period-random>
                                 <period-offset>0</period-offset>
-                                <period-offset-random>0</period-offset-random>
-                                <magnitude>50</magnitude>
-                                <magnitude-random>0</magnitude-random>
+                                <period-offset-random>0.15</period-offset-random>
+                                <magnitude>1</magnitude>
+                                <magnitude-random>2</magnitude-random>
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="SideRotate">
                             <properties>
                                 <active-on-start>Yes</active-on-start>
-                                <movement>Horizontal</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
-                                <period-random>0</period-random>
+                                <movement>Angle</movement>
+                                <wave>Square</wave>
+                                <period>0.25</period>
+                                <period-random>1</period-random>
                                 <period-offset>0</period-offset>
-                                <period-offset-random>0</period-offset-random>
-                                <magnitude>50</magnitude>
-                                <magnitude-random>0</magnitude-random>
+                                <period-offset-random>0.5</period-offset-random>
+                                <magnitude>5</magnitude>
+                                <magnitude-random>5</magnitude-random>
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="Bullet">
                             <properties>
-                                <speed>400</speed>
+                                <speed>50</speed>
                                 <acceleration>0</acceleration>
                                 <gravity>0</gravity>
-                                <bounce-off-solids>No</bounce-off-solids>
-                                <set-angle>Yes</set-angle>
-                                <initial-state>Enabled</initial-state>
+                                <bounce-off-solids>Yes</bounce-off-solids>
+                                <set-angle>No</set-angle>
+                                <initial-state>Disabled</initial-state>
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="Timer" />
@@ -1896,8 +2016,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>725</x>
-                        <y>504</y>
+                        <x>147</x>
+                        <y>182</y>
                         <z>0</z>
                         <width>32</width>
                         <height>32</height>
@@ -1908,48 +2028,54 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="people4" uid="38">
+                <instance type="group4" uid="38">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <grayscaleNo>100</grayscaleNo>
+                        <group>4</group>
+                        <isEnemy>true</isEnemy>
+                        <shake>30</shake>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="UpDownJump">
                             <properties>
                                 <active-on-start>Yes</active-on-start>
-                                <movement>Horizontal</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
-                                <period-random>0</period-random>
+                                <movement>Vertical</movement>
+                                <wave>Square</wave>
+                                <period>0.1</period>
+                                <period-random>0.2</period-random>
                                 <period-offset>0</period-offset>
-                                <period-offset-random>0</period-offset-random>
-                                <magnitude>50</magnitude>
-                                <magnitude-random>0</magnitude-random>
+                                <period-offset-random>0.15</period-offset-random>
+                                <magnitude>1</magnitude>
+                                <magnitude-random>2</magnitude-random>
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="SideRotate">
                             <properties>
                                 <active-on-start>Yes</active-on-start>
-                                <movement>Horizontal</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
-                                <period-random>0</period-random>
+                                <movement>Angle</movement>
+                                <wave>Square</wave>
+                                <period>0.25</period>
+                                <period-random>1</period-random>
                                 <period-offset>0</period-offset>
-                                <period-offset-random>0</period-offset-random>
-                                <magnitude>50</magnitude>
-                                <magnitude-random>0</magnitude-random>
+                                <period-offset-random>0.5</period-offset-random>
+                                <magnitude>5</magnitude>
+                                <magnitude-random>5</magnitude-random>
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="Bullet">
                             <properties>
-                                <speed>400</speed>
+                                <speed>50</speed>
                                 <acceleration>0</acceleration>
                                 <gravity>0</gravity>
-                                <bounce-off-solids>No</bounce-off-solids>
-                                <set-angle>Yes</set-angle>
-                                <initial-state>Enabled</initial-state>
+                                <bounce-off-solids>Yes</bounce-off-solids>
+                                <set-angle>No</set-angle>
+                                <initial-state>Disabled</initial-state>
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="Timer" />
@@ -1988,48 +2114,54 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="people4" uid="39">
+                <instance type="group4" uid="39">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <grayscaleNo>100</grayscaleNo>
+                        <group>4</group>
+                        <isEnemy>true</isEnemy>
+                        <shake>30</shake>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="UpDownJump">
                             <properties>
                                 <active-on-start>Yes</active-on-start>
-                                <movement>Horizontal</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
-                                <period-random>0</period-random>
+                                <movement>Vertical</movement>
+                                <wave>Square</wave>
+                                <period>0.1</period>
+                                <period-random>0.2</period-random>
                                 <period-offset>0</period-offset>
-                                <period-offset-random>0</period-offset-random>
-                                <magnitude>50</magnitude>
-                                <magnitude-random>0</magnitude-random>
+                                <period-offset-random>0.15</period-offset-random>
+                                <magnitude>1</magnitude>
+                                <magnitude-random>2</magnitude-random>
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="SideRotate">
                             <properties>
                                 <active-on-start>Yes</active-on-start>
-                                <movement>Horizontal</movement>
-                                <wave>Sine</wave>
-                                <period>4</period>
-                                <period-random>0</period-random>
+                                <movement>Angle</movement>
+                                <wave>Square</wave>
+                                <period>0.25</period>
+                                <period-random>1</period-random>
                                 <period-offset>0</period-offset>
-                                <period-offset-random>0</period-offset-random>
-                                <magnitude>50</magnitude>
-                                <magnitude-random>0</magnitude-random>
+                                <period-offset-random>0.5</period-offset-random>
+                                <magnitude>5</magnitude>
+                                <magnitude-random>5</magnitude-random>
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="Bullet">
                             <properties>
-                                <speed>400</speed>
+                                <speed>50</speed>
                                 <acceleration>0</acceleration>
                                 <gravity>0</gravity>
-                                <bounce-off-solids>No</bounce-off-solids>
-                                <set-angle>Yes</set-angle>
-                                <initial-state>Enabled</initial-state>
+                                <bounce-off-solids>Yes</bounce-off-solids>
+                                <set-angle>No</set-angle>
+                                <initial-state>Disabled</initial-state>
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="Timer" />

@@ -20,10 +20,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="1" name="Configuration Settings" />
     </properties>
     <families-expanded root="1">
-        <family expanded="1" name="enemy" />
+        <family expanded="1" name="people" />
     </families-expanded>
     <folders-expanded>
-        <folder expanded="1" path="object-folder/" />
+        <folder expanded="0" path="object-folder/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="1" path="file-folder/" />
@@ -31,13 +31,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="music-folder/" />
         <folder expanded="0" path="file-folder/Icons/" />
         <folder expanded="1" path="animation-folder/PlayerLight/" />
-        <folder expanded="1" path="animation-folder/people/" />
+        <folder expanded="1" path="animation-folder/group1/" />
         <folder expanded="1" path="animation-folder/player/" />
         <folder expanded="1" path="animation-folder/marker/" />
-        <folder expanded="1" path="animation-folder/people2/" />
-        <folder expanded="1" path="animation-folder/people3/" />
+        <folder expanded="1" path="animation-folder/group2/" />
+        <folder expanded="1" path="animation-folder/group3/" />
         <folder expanded="1" path="animation-folder/shout/" />
-        <folder expanded="1" path="animation-folder/people4/" />
+        <folder expanded="1" path="animation-folder/group4/" />
         <folder expanded="1" path="animation-folder/hello/" />
     </folders-expanded>
 </c2uistate>

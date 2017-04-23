@@ -3,6 +3,11 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
+        <variable constant="0" name="helloGrayscaleNo" sid="799044145178545" static="0" type="number">10</variable>
+        <variable constant="0" name="friendDistance" sid="106722928681137" static="0" type="number">75</variable>
+        <variable constant="0" name="helloLightIncrement" sid="656965288450362" static="0" type="number">20</variable>
+        <variable constant="0" name="shoutLightIncrement" sid="162820223442331" static="0" type="number">10</variable>
+        <variable constant="0" name="playerLightSize" sid="625369903975262" static="0" type="number">320</variable>
         <variable comment="Time that shout appears before moving off screen again" constant="0" name="shoutTime" sid="985385078439286" static="0" type="number">0.8</variable>
         <variable constant="0" name="initialStaticVolume" sid="468792055856604" static="0" type="number">-5</variable>
         <variable constant="0" name="staticVolume" sid="287861013927092" static="0" type="number">-5</variable>
@@ -62,7 +67,7 @@
                 </event-group>
             </sub-events>
         </event-group>
-        <event-group description="" sid="258289257131224" title="PlayerSetup">
+        <event-group description="" sid="258289257131224" title="Setup">
             <sub-events>
                 <event-block sid="485505983920132">
                     <conditions>
@@ -114,6 +119,15 @@
                             <param id="0" name="Object">player</param>
                             <param id="1" name="Image point (optional)">&quot;LightAnchor&quot;</param>
                         </action>
+                        <action id="-7" name="Set size" sid="968774595618544" type="PlayerLight">
+                            <param id="0" name="Width">playerLightSize</param>
+                            <param id="1" name="Height">playerLightSize</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="783940846519985" type="people">
+                            <param id="0" name="Effect">&quot;Grayscale&quot;</param>
+                            <param id="1" name="Parameter index">0</param>
+                            <param id="2" name="Value">people.grayscaleNo</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
@@ -147,7 +161,7 @@
                 </event-block>
                 <event-block sid="902588713849944">
                     <conditions>
-                        <condition id="-15" name="Pick nearest/furthest" sid="144594219464012" type="enemy">
+                        <condition id="-15" name="Pick nearest/furthest" sid="144594219464012" type="people">
                             <param id="0" name="Which">0</param>
                             <param id="1" name="X">player.X</param>
                             <param id="2" name="Y">player.Y</param>
@@ -155,86 +169,95 @@
                     </conditions>
                     <actions>
                         <action id="0" name="Set text" sid="366982144698613" type="debug_text">
-                            <param id="0" name="Text">round(distance(player.X, player.Y, enemy.X, enemy.Y))</param>
+                            <param id="0" name="Text">round(distance(player.X, player.Y, people.X, people.Y))</param>
                         </action>
                         <action id="-4" name="Set position to another object" sid="241381180705529" type="marker">
-                            <param id="0" name="Object">enemy</param>
+                            <param id="0" name="Object">people</param>
                             <param id="1" name="Image point (optional)">0</param>
                         </action>
                     </actions>
                     <sub-events>
-                        <event-block sid="758960227750567">
+                        <event-block sid="869708705526636">
                             <conditions>
-                                <condition id="-8" name="Compare two values" sid="900213678218355" type="System">
-                                    <param id="0" name="First value">distance(enemy.X, enemy.Y, player.X, player.Y)</param>
-                                    <param id="1" name="Comparison">2</param>
-                                    <param id="2" name="Second value">100</param>
+                                <condition id="-8" name="Is boolean instance variable set" sid="540513383861617" type="people">
+                                    <param id="0" name="Instance variable">isEnemy</param>
                                 </condition>
                             </conditions>
-                            <actions>
-                                <action behavior="ScrollTo" id="0" name="Shake" sid="960462383803511" type="player">
-                                    <param id="0" name="Magnitude">30</param>
-                                    <param id="1" name="Duration">0.1</param>
-                                    <param id="2" name="Mode">0</param>
-                                </action>
-                            </actions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="758960227750567">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="900213678218355" type="System">
+                                            <param id="0" name="First value">distance(people.X, people.Y, player.X, player.Y)</param>
+                                            <param id="1" name="Comparison">2</param>
+                                            <param id="2" name="Second value">100</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="ScrollTo" id="0" name="Shake" sid="960462383803511" type="player">
+                                            <param id="0" name="Magnitude">people.shake</param>
+                                            <param id="1" name="Duration">0.1</param>
+                                            <param id="2" name="Mode">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="639480786313313">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="734088469678346" type="System">
+                                            <param id="0" name="First value">distance(people.X, people.Y, player.X, player.Y)</param>
+                                            <param id="1" name="Comparison">2</param>
+                                            <param id="2" name="Second value">100</param>
+                                        </condition>
+                                        <condition id="-4" name="Trigger once while true" sid="550143831318135" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="590210418928855" type="System">
+                                            <param id="0" name="Variable">staticVolume</param>
+                                            <param id="1" name="Value">initialStaticVolume</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="287830287438510" type="Audio">
+                                            <param id="0" name="Audio file">tv-static-01</param>
+                                            <param id="2" name="Loop">1</param>
+                                            <param id="3" name="Volume">staticVolume</param>
+                                            <param id="1" name="Tag (optional)">&quot;static&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="631516769534460">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="379885606199940" type="System">
+                                            <param id="0" name="First value">distance(people.X, people.Y, player.X, player.Y)</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Second value">100</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-11" name="Subtract from" sid="422598256305658" type="System">
+                                            <param id="0" name="Variable">staticVolume</param>
+                                            <param id="1" name="Value">0.2</param>
+                                        </action>
+                                        <action id="3" name="Set volume" sid="677349715150389" type="Audio">
+                                            <param id="0" name="Tag">&quot;static&quot;</param>
+                                            <param id="1" name="dB">staticVolume</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
-                        <event-block sid="639480786313313">
+                        <event-block sid="810256376311968">
                             <conditions>
-                                <condition id="-8" name="Compare two values" sid="734088469678346" type="System">
-                                    <param id="0" name="First value">distance(enemy.X, enemy.Y, player.X, player.Y)</param>
-                                    <param id="1" name="Comparison">2</param>
-                                    <param id="2" name="Second value">100</param>
-                                </condition>
-                                <condition id="-4" name="Trigger once while true" sid="550143831318135" type="System" />
-                            </conditions>
-                            <actions>
-                                <action id="-9" name="Set value" sid="590210418928855" type="System">
-                                    <param id="0" name="Variable">staticVolume</param>
-                                    <param id="1" name="Value">initialStaticVolume</param>
-                                </action>
-                                <action id="0" name="Play" sid="287830287438510" type="Audio">
-                                    <param id="0" name="Audio file">tv-static-01</param>
-                                    <param id="2" name="Loop">1</param>
-                                    <param id="3" name="Volume">staticVolume</param>
-                                    <param id="1" name="Tag (optional)">&quot;static&quot;</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="631516769534460">
-                            <conditions>
-                                <condition id="-8" name="Compare two values" sid="379885606199940" type="System">
-                                    <param id="0" name="First value">distance(enemy.X, enemy.Y, player.X, player.Y)</param>
-                                    <param id="1" name="Comparison">4</param>
-                                    <param id="2" name="Second value">100</param>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="834067363652221" type="people">
+                                    <param id="0" name="Instance variable">isEnemy</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-11" name="Subtract from" sid="422598256305658" type="System">
+                                <action id="-11" name="Subtract from" sid="336940677028584" type="System">
                                     <param id="0" name="Variable">staticVolume</param>
                                     <param id="1" name="Value">0.2</param>
                                 </action>
-                                <action id="3" name="Set volume" sid="677349715150389" type="Audio">
+                                <action id="3" name="Set volume" sid="511481386453576" type="Audio">
                                     <param id="0" name="Tag">&quot;static&quot;</param>
                                     <param id="1" name="dB">staticVolume</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="833002239016368">
-                            <conditions>
-                                <condition id="-14" name="Compare variable" sid="137728019757440" type="System">
-                                    <param id="0" name="Variable">staticVolume</param>
-                                    <param id="1" name="Comparison">3</param>
-                                    <param id="2" name="Value">-30</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="6" name="Stop" sid="130993252881389" type="Audio">
-                                    <param id="0" name="Tag">&quot;static&quot;</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="738998959616209" type="System">
-                                    <param id="0" name="Variable">staticVolume</param>
-                                    <param id="1" name="Value">initialStaticVolume</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -242,6 +265,24 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="833002239016368">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="137728019757440" type="System">
+                    <param id="0" name="Variable">staticVolume</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">-30</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="130993252881389" type="Audio">
+                    <param id="0" name="Tag">&quot;static&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="738998959616209" type="System">
+                    <param id="0" name="Variable">staticVolume</param>
+                    <param id="1" name="Value">initialStaticVolume</param>
+                </action>
+            </actions>
+        </event-block>
         <event-group description="" sid="553754133515456" title="LetterPickup">
             <sub-events>
                 <event-block sid="678813859462748">
@@ -275,12 +316,12 @@
             <sub-events>
                 <event-block sid="242414964219901">
                     <conditions>
-                        <condition behavior="Timer" id="0" name="On timer" sid="395907953166935" type="enemy">
+                        <condition behavior="Timer" id="0" name="On timer" sid="395907953166935" type="people">
                             <param id="0" name="Tag">&quot;shoutedAt&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action behavior="Bullet" id="5" name="Set enabled" sid="572987932205561" type="enemy">
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="572987932205561" type="people">
                             <param id="0" name="State">0</param>
                         </action>
                     </actions>
@@ -293,9 +334,24 @@
                     </conditions>
                     <actions />
                     <sub-events>
+                        <event-block sid="231227942753273">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="459718949949837" type="System">
+                                    <param id="0" name="Variable">playerLightSize</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">320</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Subtract from" sid="807605421750776" type="System">
+                                    <param id="0" name="Variable">playerLightSize</param>
+                                    <param id="1" name="Value">shoutLightIncrement</param>
+                                </action>
+                            </actions>
+                        </event-block>
                         <event-block sid="582592692667118">
                             <conditions>
-                                <condition id="-15" name="Pick nearest/furthest" sid="225788486676045" type="enemy">
+                                <condition id="-15" name="Pick nearest/furthest" sid="225788486676045" type="people">
                                     <param id="0" name="Which">0</param>
                                     <param id="1" name="X">player.X</param>
                                     <param id="2" name="Y">player.Y</param>
@@ -303,8 +359,8 @@
                             </conditions>
                             <actions>
                                 <action id="-22" name="Set angle toward position" sid="905151142798819" type="player">
-                                    <param id="0" name="X">enemy.X</param>
-                                    <param id="1" name="Y">enemy.Y</param>
+                                    <param id="0" name="X">people.X</param>
+                                    <param id="1" name="Y">people.Y</param>
                                 </action>
                                 <action behavior="Timer" id="0" name="Start timer" sid="108574753155459" type="player">
                                     <param id="0" name="Duration">0.8</param>
@@ -325,19 +381,19 @@
                                 <event-block sid="308700051977982">
                                     <conditions>
                                         <condition id="-8" name="Compare two values" sid="808944485125265" type="System">
-                                            <param id="0" name="First value">distance(player.X, player.Y, enemy.X, enemy.Y)</param>
+                                            <param id="0" name="First value">distance(player.X, player.Y, people.X, people.Y)</param>
                                             <param id="1" name="Comparison">3</param>
                                             <param id="2" name="Second value">enemyDistance</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="682240550034893" type="enemy">
-                                            <param id="0" name="Angle">angle(player.X, player.Y, enemy.X, enemy.Y)</param>
+                                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="682240550034893" type="people">
+                                            <param id="0" name="Angle">angle(player.X, player.Y, people.X, people.Y)</param>
                                         </action>
-                                        <action behavior="Bullet" id="5" name="Set enabled" sid="503701030587408" type="enemy">
+                                        <action behavior="Bullet" id="5" name="Set enabled" sid="503701030587408" type="people">
                                             <param id="0" name="State">1</param>
                                         </action>
-                                        <action behavior="Timer" id="0" name="Start timer" sid="798815632282224" type="enemy">
+                                        <action behavior="Timer" id="0" name="Start timer" sid="798815632282224" type="people">
                                             <param id="0" name="Duration">2.0</param>
                                             <param id="1" name="Type">0</param>
                                             <param id="2" name="Tag">&quot;shoutedAt&quot;</param>
@@ -362,68 +418,179 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="972999201155870">
-            <conditions>
-                <condition id="0" name="On key pressed" sid="618292797165981" type="Keyboard">
-                    <param id="0" name="Key">17 (Ctrl)</param>
-                </condition>
-            </conditions>
-            <actions />
+        <event-group description="" sid="485998418555892" title="Hello">
             <sub-events>
-                <event-block sid="744047901985964">
+                <event-block sid="972999201155870">
                     <conditions>
-                        <condition id="-15" name="Pick nearest/furthest" sid="588242545678910" type="enemy">
-                            <param id="0" name="Which">0</param>
-                            <param id="1" name="X">player.X</param>
-                            <param id="2" name="Y">player.Y</param>
+                        <condition id="0" name="On key pressed" sid="618292797165981" type="Keyboard">
+                            <param id="0" name="Key">17 (Ctrl)</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-22" name="Set angle toward position" sid="656040645082662" type="player">
-                            <param id="0" name="X">enemy.X</param>
-                            <param id="1" name="Y">enemy.Y</param>
-                        </action>
-                        <action behavior="Timer" id="0" name="Start timer" sid="633953396734779" type="player">
-                            <param id="0" name="Duration">0.8</param>
-                            <param id="1" name="Type">0</param>
-                            <param id="2" name="Tag">&quot;helloTimer&quot;</param>
-                        </action>
-                        <action id="0" name="Play" sid="896601641032341" type="Audio">
-                            <param id="0" name="Audio file">hello</param>
-                            <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;hello&quot;</param>
-                        </action>
-                        <action id="-15" name="Set visible" sid="417640581934761" type="hello">
-                            <param id="0" name="Visibility">1</param>
+                        <action id="-10" name="Add to" sid="968776532325154" type="System">
+                            <param id="0" name="Variable">playerLightSize</param>
+                            <param id="1" name="Value">helloLightIncrement*0.75</param>
                         </action>
                     </actions>
                     <sub-events>
-                        <event-block sid="500993521159200">
+                        <event-block sid="744047901985964">
                             <conditions>
-                                <condition id="-8" name="Compare two values" sid="577258365264648" type="System">
-                                    <param id="0" name="First value">distance(player.X, player.Y, enemy.X, enemy.Y)</param>
-                                    <param id="1" name="Comparison">3</param>
-                                    <param id="2" name="Second value">enemyDistance</param>
+                                <condition id="-15" name="Pick nearest/furthest" sid="588242545678910" type="people">
+                                    <param id="0" name="Which">0</param>
+                                    <param id="1" name="X">player.X</param>
+                                    <param id="2" name="Y">player.Y</param>
                                 </condition>
                             </conditions>
-                            <actions />
+                            <actions>
+                                <action id="-22" name="Set angle toward position" sid="656040645082662" type="player">
+                                    <param id="0" name="X">people.X</param>
+                                    <param id="1" name="Y">people.Y</param>
+                                </action>
+                                <action behavior="Timer" id="0" name="Start timer" sid="633953396734779" type="player">
+                                    <param id="0" name="Duration">0.8</param>
+                                    <param id="1" name="Type">0</param>
+                                    <param id="2" name="Tag">&quot;helloTimer&quot;</param>
+                                </action>
+                                <action id="0" name="Play" sid="896601641032341" type="Audio">
+                                    <param id="0" name="Audio file">hello</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;hello&quot;</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="417640581934761" type="hello">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="500993521159200">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="577258365264648" type="System">
+                                            <param id="0" name="First value">distance(player.X, player.Y, people.X, people.Y)</param>
+                                            <param id="1" name="Comparison">3</param>
+                                            <param id="2" name="Second value">friendDistance</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="621922667329682">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="902723706615918" type="people">
+                                                    <param id="0" name="Instance variable">group</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-12" name="Subtract from" sid="235910846344504" type="group1">
+                                                    <param id="0" name="Instance variable">grayscaleNo</param>
+                                                    <param id="1" name="Value">helloGrayscaleNo</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="979515094035176">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="994453207725222" type="people">
+                                                    <param id="0" name="Instance variable">group</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-12" name="Subtract from" sid="382947102250825" type="group2">
+                                                    <param id="0" name="Instance variable">grayscaleNo</param>
+                                                    <param id="1" name="Value">helloGrayscaleNo</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="244526103069364">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="358282995331449" type="people">
+                                                    <param id="0" name="Instance variable">group</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">3</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-12" name="Subtract from" sid="174703852406840" type="group3">
+                                                    <param id="0" name="Instance variable">grayscaleNo</param>
+                                                    <param id="1" name="Value">helloGrayscaleNo</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="829942820353801">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="317772013581212" type="people">
+                                                    <param id="0" name="Instance variable">group</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">4</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-12" name="Subtract from" sid="566912805496653" type="group4">
+                                                    <param id="0" name="Instance variable">grayscaleNo</param>
+                                                    <param id="1" name="Value">helloGrayscaleNo</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                     </sub-events>
                 </event-block>
+                <event-block sid="330686138107645">
+                    <conditions>
+                        <condition behavior="Timer" id="0" name="On timer" sid="924600845907783" type="player">
+                            <param id="0" name="Tag">&quot;helloTimer&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="712923714905973" type="hello">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
-        </event-block>
-        <event-block sid="330686138107645">
-            <conditions>
-                <condition behavior="Timer" id="0" name="On timer" sid="924600845907783" type="player">
-                    <param id="0" name="Tag">&quot;helloTimer&quot;</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-15" name="Set visible" sid="712923714905973" type="hello">
-                    <param id="0" name="Visibility">0</param>
-                </action>
-            </actions>
-        </event-block>
+        </event-group>
+        <event-group description="" sid="897483338858942" title="Enemy Friend">
+            <sub-events>
+                <event-block sid="421040783314912">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="695563595953764" type="people">
+                            <param id="0" name="Instance variable">grayscaleNo</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">50</param>
+                        </condition>
+                        <condition id="-8" name="Is boolean instance variable set" sid="179691210989878" type="people">
+                            <param id="0" name="Instance variable">isEnemy</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="138301985578403" type="people">
+                            <param id="0" name="Instance variable">isEnemy</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="950147622786586">
+                    <conditions>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="127626724142441" type="people">
+                            <param id="0" name="Instance variable">isEnemy</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="464939631789151" type="people">
+                            <param id="0" name="Instance variable">grayscaleNo</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">50</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="952438791257903" type="people">
+                            <param id="0" name="Instance variable">isEnemy</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

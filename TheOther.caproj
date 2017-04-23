@@ -67,7 +67,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="people" sid="588563669425130">
+        <object-type name="group1" sid="588563669425130">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="ShadowCaster" sid="825217638470251">
@@ -148,7 +148,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="people2" sid="225085291248037">
+        <object-type name="group2" sid="225085291248037">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="ShadowCaster" sid="664979223437964">
@@ -164,7 +164,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="people3" sid="996062401230028">
+        <object-type name="group3" sid="996062401230028">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="ShadowCaster" sid="193112904779075">
@@ -222,7 +222,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="people4" sid="760199805054982">
+        <object-type name="group4" sid="760199805054982">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="ShadowCaster" sid="237371139589112">
@@ -264,13 +264,19 @@
         </object-type>
     </object-folder>
     <families>
-        <family name="enemy" plugin-id="Sprite" sid="663671131925655">
+        <family name="people" plugin-id="Sprite" sid="663671131925655">
             <members>
-                <member>people</member>
-                <member>people2</member>
-                <member>people3</member>
-                <member>people4</member>
+                <member>group1</member>
+                <member>group2</member>
+                <member>group3</member>
+                <member>group4</member>
             </members>
+            <instance-variables>
+                <instance-variable name="grayscaleNo" sid="690761259774528" type="number" />
+                <instance-variable name="group" sid="359997670688450" type="number" />
+                <instance-variable name="isEnemy" sid="598711860600255" type="boolean" />
+                <instance-variable name="shake" sid="181803367302276" type="number" />
+            </instance-variables>
             <behaviors>
                 <behavior-type name="UpDownJump" sid="293170424220196">
                     <behavior id="Sin" />
