@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
+        <variable constant="0" name="timeLeft" sid="315727437506435" static="0" type="number">60</variable>
         <variable comment="How shake atic decreases by when you say hello" constant="0" name="shakeSubstraction" sid="734979746222153" static="0" type="number">10</variable>
         <variable constant="0" name="shoutGrayscale" sid="276204648380167" static="0" type="number">20</variable>
         <variable constant="0" name="helloGrayscaleNo" sid="799044145178545" static="0" type="number">10</variable>
@@ -263,28 +264,28 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <event-block sid="833002239016368">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="137728019757440" type="System">
+                                    <param id="0" name="Variable">staticVolume</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">-30</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Stop" sid="130993252881389" type="Audio">
+                                    <param id="0" name="Tag">&quot;static&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="738998959616209" type="System">
+                                    <param id="0" name="Variable">staticVolume</param>
+                                    <param id="1" name="Value">initialStaticVolume</param>
+                                </action>
+                            </actions>
+                        </event-block>
                     </sub-events>
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="833002239016368">
-            <conditions>
-                <condition id="-14" name="Compare variable" sid="137728019757440" type="System">
-                    <param id="0" name="Variable">staticVolume</param>
-                    <param id="1" name="Comparison">3</param>
-                    <param id="2" name="Value">-30</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="6" name="Stop" sid="130993252881389" type="Audio">
-                    <param id="0" name="Tag">&quot;static&quot;</param>
-                </action>
-                <action id="-9" name="Set value" sid="738998959616209" type="System">
-                    <param id="0" name="Variable">staticVolume</param>
-                    <param id="1" name="Value">initialStaticVolume</param>
-                </action>
-            </actions>
-        </event-block>
         <event-group description="" sid="553754133515456" title="LetterPickup">
             <sub-events>
                 <event-block sid="678813859462748">
@@ -691,6 +692,26 @@
                         <action id="-13" name="Set boolean" sid="952438791257903" type="people">
                             <param id="0" name="Instance variable">isEnemy</param>
                             <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="587983166258140" title="Timer">
+            <sub-events>
+                <event-block sid="730008442811335">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="597367665503815" type="System">
+                            <param id="0" name="Interval (seconds)">1.0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="296525808878987" type="System">
+                            <param id="0" name="Variable">timeLeft</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="263569018541420" type="TimeLeft">
+                            <param id="0" name="Text">timeLeft &amp;&quot;s&quot;</param>
                         </action>
                     </actions>
                 </event-block>

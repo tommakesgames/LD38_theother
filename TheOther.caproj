@@ -262,6 +262,37 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="UIbg" sid="633912055712967">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="TiledBackground2" sid="396590169378855">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="outsideWall" sid="671727103433868">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="916524055034533">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="exit" sid="918227803685228">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="closed" pingpong="0" repeatcount="1" repeatto="0" sid="186270435936553" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="open" pingpong="0" repeatcount="1" repeatto="0" sid="203137042431450" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TimeLeft" sid="653352071527507">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families>
         <family name="people" plugin-id="Sprite" sid="663671131925655">

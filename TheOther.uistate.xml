@@ -23,11 +23,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <family expanded="1" name="people" />
     </families-expanded>
     <folders-expanded>
-        <folder expanded="0" path="object-folder/" />
+        <folder expanded="1" path="object-folder/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="1" path="file-folder/" />
-        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="0" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
         <folder expanded="0" path="file-folder/Icons/" />
         <folder expanded="1" path="animation-folder/PlayerLight/" />
@@ -39,5 +39,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/shout/" />
         <folder expanded="1" path="animation-folder/group4/" />
         <folder expanded="1" path="animation-folder/hello/" />
+        <folder expanded="1" path="animation-folder/exit/" />
     </folders-expanded>
 </c2uistate>
