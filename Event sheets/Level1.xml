@@ -133,6 +133,9 @@
                             <param id="0" name="Animation">&quot;PickupArrow&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="0" name="Set text" sid="296154933422892" type="Letter">
+                            <param id="0" name="Text">Letter.letter</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="368105805745685">

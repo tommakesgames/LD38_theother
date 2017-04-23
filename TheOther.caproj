@@ -348,6 +348,11 @@
         </object-type>
         <object-type name="innerWall" sid="673335791368822">
             <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="558690375136636">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
             <texture />
         </object-type>
     </object-folder>
