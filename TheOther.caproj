@@ -91,6 +91,10 @@
         </object-type>
         <object-type name="player" sid="174662635688415">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="canShout" sid="601150933901784" type="boolean" />
+                <instance-variable name="canHello" sid="834536850620183" type="boolean" />
+            </instance-variables>
             <behaviors>
                 <behavior-type name="8Direction" sid="435215352743562">
                     <behavior id="EightDir" />
@@ -311,6 +315,14 @@
                     </frame>
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="shakedebug" sid="908501208811092">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Pin" sid="495489634830267">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
         </object-type>
     </object-folder>
     <families>

@@ -4,7 +4,7 @@
     <name>Level1</name>
     <events>
         <variable constant="0" name="timeLeft" sid="315727437506435" static="0" type="number">60</variable>
-        <variable comment="How shake atic decreases by when you say hello" constant="0" name="shakeSubstraction" sid="734979746222153" static="0" type="number">10</variable>
+        <variable comment="How shake atic decreases by when you say hello" constant="0" name="shakeSubstraction" sid="734979746222153" static="0" type="number">7</variable>
         <variable constant="0" name="shoutGrayscale" sid="276204648380167" static="0" type="number">20</variable>
         <variable constant="0" name="helloGrayscaleNo" sid="799044145178545" static="0" type="number">10</variable>
         <variable constant="0" name="friendDistance" sid="106722928681137" static="0" type="number">120</variable>
@@ -119,6 +119,14 @@
                             <param id="0" name="Pin to">player</param>
                             <param id="1" name="Mode">1</param>
                         </action>
+                        <action id="-3" name="Set position" sid="792949950641302" type="shakedebug">
+                            <param id="0" name="X">player.X</param>
+                            <param id="1" name="Y">player.Y+30</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="170988636445212" type="shakedebug">
+                            <param id="0" name="Pin to">player</param>
+                            <param id="1" name="Mode">1</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="368105805745685">
@@ -228,6 +236,9 @@
                                             <param id="0" name="Magnitude">people.shake</param>
                                             <param id="1" name="Duration">0.1</param>
                                             <param id="2" name="Mode">0</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="200872759459628" type="shakedebug">
+                                            <param id="0" name="Text">people.shake</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -373,10 +384,17 @@
                         <condition id="0" name="On key pressed" sid="917084486669438" type="Keyboard">
                             <param id="0" name="Key">32 (Space)</param>
                         </condition>
+                        <condition id="-8" name="Is boolean instance variable set" sid="195827815484673" type="player">
+                            <param id="0" name="Instance variable">canShout</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action behavior="8Direction" id="8" name="Set enabled" sid="804484729670212" type="player">
                             <param id="0" name="State">0</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="793091995741756" type="player">
+                            <param id="0" name="Instance variable">canShout</param>
+                            <param id="1" name="Value">0</param>
                         </action>
                     </actions>
                     <sub-events>
@@ -421,6 +439,10 @@
                                 </action>
                                 <action id="-15" name="Set visible" sid="357550112118178" type="shout">
                                     <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="280436602438017" type="people">
+                                    <param id="0" name="Instance variable">shake</param>
+                                    <param id="1" name="Value">initialShake</param>
                                 </action>
                             </actions>
                             <sub-events>
@@ -549,6 +571,10 @@
                         <action behavior="8Direction" id="8" name="Set enabled" sid="376635852969623" type="player">
                             <param id="0" name="State">1</param>
                         </action>
+                        <action id="-13" name="Set boolean" sid="316249823716560" type="player">
+                            <param id="0" name="Instance variable">canShout</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
@@ -560,6 +586,9 @@
                         <condition id="0" name="On key pressed" sid="618292797165981" type="Keyboard">
                             <param id="0" name="Key">17 (Ctrl)</param>
                         </condition>
+                        <condition id="-8" name="Is boolean instance variable set" sid="643959717008197" type="player">
+                            <param id="0" name="Instance variable">canHello</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="-10" name="Add to" sid="968776532325154" type="System">
@@ -568,6 +597,10 @@
                         </action>
                         <action behavior="8Direction" id="8" name="Set enabled" sid="524262816710884" type="player">
                             <param id="0" name="State">0</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="647115476273599" type="player">
+                            <param id="0" name="Instance variable">canHello</param>
+                            <param id="1" name="Value">0</param>
                         </action>
                     </actions>
                     <sub-events>
@@ -633,10 +666,6 @@
                                                             <param id="0" name="Instance variable">grayscaleNo</param>
                                                             <param id="1" name="Value">helloGrayscaleNo</param>
                                                         </action>
-                                                        <action id="-12" name="Subtract from" sid="585028202569187" type="group1">
-                                                            <param id="0" name="Instance variable">shake</param>
-                                                            <param id="1" name="Value">shakeSubstraction</param>
-                                                        </action>
                                                     </actions>
                                                 </event-block>
                                                 <event-block sid="979515094035176">
@@ -651,10 +680,6 @@
                                                         <action id="-12" name="Subtract from" sid="382947102250825" type="group2">
                                                             <param id="0" name="Instance variable">grayscaleNo</param>
                                                             <param id="1" name="Value">helloGrayscaleNo</param>
-                                                        </action>
-                                                        <action id="-12" name="Subtract from" sid="178719917472455" type="group2">
-                                                            <param id="0" name="Instance variable">shake</param>
-                                                            <param id="1" name="Value">shakeSubstraction</param>
                                                         </action>
                                                     </actions>
                                                 </event-block>
@@ -671,10 +696,6 @@
                                                             <param id="0" name="Instance variable">grayscaleNo</param>
                                                             <param id="1" name="Value">helloGrayscaleNo</param>
                                                         </action>
-                                                        <action id="-12" name="Subtract from" sid="631781462832818" type="group3">
-                                                            <param id="0" name="Instance variable">shake</param>
-                                                            <param id="1" name="Value">shakeSubstraction</param>
-                                                        </action>
                                                     </actions>
                                                 </event-block>
                                                 <event-block sid="829942820353801">
@@ -690,7 +711,75 @@
                                                             <param id="0" name="Instance variable">grayscaleNo</param>
                                                             <param id="1" name="Value">helloGrayscaleNo</param>
                                                         </action>
-                                                        <action id="-12" name="Subtract from" sid="188352690392817" type="group4">
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                        <event-block sid="113711239153981">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="417771378483014" type="people">
+                                                    <param id="0" name="Instance variable">shake</param>
+                                                    <param id="1" name="Comparison">4</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions />
+                                            <sub-events>
+                                                <event-block sid="653391935631418">
+                                                    <conditions>
+                                                        <condition id="-7" name="Compare instance variable" sid="323552385851857" type="people">
+                                                            <param id="0" name="Instance variable">group</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">1</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-12" name="Subtract from" sid="879109723043440" type="group1">
+                                                            <param id="0" name="Instance variable">shake</param>
+                                                            <param id="1" name="Value">shakeSubstraction</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="819380579866850">
+                                                    <conditions>
+                                                        <condition id="-7" name="Compare instance variable" sid="756380539422253" type="people">
+                                                            <param id="0" name="Instance variable">group</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">2</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-12" name="Subtract from" sid="818604104388560" type="group2">
+                                                            <param id="0" name="Instance variable">shake</param>
+                                                            <param id="1" name="Value">shakeSubstraction</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="398711684753141">
+                                                    <conditions>
+                                                        <condition id="-7" name="Compare instance variable" sid="325596468007146" type="people">
+                                                            <param id="0" name="Instance variable">group</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">3</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-12" name="Subtract from" sid="526875937831914" type="group3">
+                                                            <param id="0" name="Instance variable">shake</param>
+                                                            <param id="1" name="Value">shakeSubstraction</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="648372523844811">
+                                                    <conditions>
+                                                        <condition id="-7" name="Compare instance variable" sid="384504877675110" type="people">
+                                                            <param id="0" name="Instance variable">group</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">4</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-12" name="Subtract from" sid="682546391635597" type="group4">
                                                             <param id="0" name="Instance variable">shake</param>
                                                             <param id="1" name="Value">shakeSubstraction</param>
                                                         </action>
@@ -716,6 +805,10 @@
                         </action>
                         <action behavior="8Direction" id="8" name="Set enabled" sid="142978447481527" type="player">
                             <param id="0" name="State">1</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="641670404073779" type="player">
+                            <param id="0" name="Instance variable">canHello</param>
+                            <param id="1" name="Value">1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -846,33 +939,37 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="417849131763527">
-            <conditions>
-                <condition id="-15" name="Pick nearest/furthest" sid="225664130447549" type="Letter">
-                    <param id="0" name="Which">0</param>
-                    <param id="1" name="X">player.X</param>
-                    <param id="2" name="Y">player.Y</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-8" name="Set angle" sid="144929345535344" type="arrow">
-                    <param id="0" name="Angle">angle(player.X, player.Y, Letter.X, Letter.Y)</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="713188829275681">
-            <conditions>
-                <condition id="-8" name="Compare two values" sid="426871871750700" type="System">
-                    <param id="0" name="First value">Letter.Count</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Second value">0</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-8" name="Set angle" sid="921395356795014" type="arrow">
-                    <param id="0" name="Angle">angle(player.X, player.Y, exit.X, exit.Y)</param>
-                </action>
-            </actions>
-        </event-block>
+        <event-group description="" sid="289963853730270" title="Arrows">
+            <sub-events>
+                <event-block sid="417849131763527">
+                    <conditions>
+                        <condition id="-15" name="Pick nearest/furthest" sid="225664130447549" type="Letter">
+                            <param id="0" name="Which">0</param>
+                            <param id="1" name="X">player.X</param>
+                            <param id="2" name="Y">player.Y</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-8" name="Set angle" sid="144929345535344" type="arrow">
+                            <param id="0" name="Angle">angle(player.X, player.Y, Letter.X, Letter.Y)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="713188829275681">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="426871871750700" type="System">
+                            <param id="0" name="First value">Letter.Count</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-8" name="Set angle" sid="921395356795014" type="arrow">
+                            <param id="0" name="Angle">angle(player.X, player.Y, exit.X, exit.Y)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>
