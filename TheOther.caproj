@@ -333,6 +333,9 @@
         <object-type name="friendship" sid="303977671596340">
             <plugin id="Text" />
         </object-type>
+        <object-type name="final" sid="187023763331948">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families>
         <family name="people" plugin-id="Sprite" sid="663671131925655">
