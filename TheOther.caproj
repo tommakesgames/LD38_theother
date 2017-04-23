@@ -290,7 +290,7 @@
         <object-type name="TimeLeft" sid="653352071527507">
             <plugin id="Text" />
         </object-type>
-        <object-type name="Text" sid="432856301116872">
+        <object-type name="Title" sid="432856301116872">
             <plugin id="Text" />
         </object-type>
         <object-type name="Text2" sid="420647857109636">
@@ -323,6 +323,15 @@
                     <behavior id="Pin" />
                 </behavior-type>
             </behaviors>
+        </object-type>
+        <object-type name="SecondsLeft" sid="789346076615194">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="letterscollected" sid="486370022594322">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="friendship" sid="303977671596340">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families>

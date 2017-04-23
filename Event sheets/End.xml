@@ -2,5 +2,23 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>End</name>
-    <events />
+    <events>
+        <event-block sid="602904230971816">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="784278622333025" type="System" />
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="657656171585108" type="Audio" />
+                <action id="0" name="Set text" sid="364487607137733" type="SecondsLeft">
+                    <param id="0" name="Text">&quot;Seconds left: &quot;&amp;timeLeft&amp;&quot;s.&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="977856739363699" type="letterscollected">
+                    <param id="0" name="Text">&quot;Letters Collected: &quot;&amp;lettersCollected</param>
+                </action>
+                <action id="0" name="Set text" sid="399551648259895" type="friendship">
+                    <param id="0" name="Text">&quot;Friends points &quot;&amp;friendsNumber*10</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
 </c2eventsheet>

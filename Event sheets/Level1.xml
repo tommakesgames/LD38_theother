@@ -3,6 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Level1</name>
     <events>
+        <variable constant="0" name="friendsNumber" sid="335956677499961" static="0" type="number">0</variable>
+        <variable constant="0" name="lettersCollected" sid="230758650722186" static="0" type="number">0</variable>
         <variable constant="0" name="timeLeft" sid="315727437506435" static="0" type="number">60</variable>
         <variable comment="How shake atic decreases by when you say hello" constant="0" name="shakeSubstraction" sid="734979746222153" static="0" type="number">7</variable>
         <variable constant="0" name="shoutGrayscale" sid="276204648380167" static="0" type="number">20</variable>
@@ -348,6 +350,10 @@
                             <param id="2" name="Loop">0</param>
                             <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;pickup&quot;</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="758670417766096" type="System">
+                            <param id="0" name="Variable">lettersCollected</param>
+                            <param id="1" name="Value">1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -914,11 +920,26 @@
                                     <param id="0" name="Animation">&quot;open&quot;</param>
                                 </condition>
                             </conditions>
-                            <actions>
-                                <action id="-43" name="Go to next/previous layout" sid="703587026359772" type="System">
-                                    <param id="0" name="Which">0</param>
-                                </action>
-                            </actions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="256768503496136">
+                                    <conditions>
+                                        <condition id="-34" name="Pick by evaluate" sid="588373030116609" type="System">
+                                            <param id="0" name="Object">people</param>
+                                            <param id="1" name="Expression">people.isEnemy</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="738871191824538" type="System">
+                                            <param id="0" name="Variable">friendsNumber</param>
+                                            <param id="1" name="Value">people.Count-people.PickedCount</param>
+                                        </action>
+                                        <action id="-43" name="Go to next/previous layout" sid="703587026359772" type="System">
+                                            <param id="0" name="Which">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                         <event-block sid="187336035341846">
                             <conditions>
