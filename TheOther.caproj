@@ -220,6 +220,22 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="people4" sid="760199805054982">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="ShadowCaster" sid="237371139589112">
+                    <behavior id="shadowcaster" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="115579476881753">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="870856026854970" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="enemy" plugin-id="Sprite" sid="663671131925655">
@@ -227,6 +243,7 @@
                 <member>people</member>
                 <member>people2</member>
                 <member>people3</member>
+                <member>people4</member>
             </members>
             <behaviors>
                 <behavior-type name="UpDownJump" sid="293170424220196">
