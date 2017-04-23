@@ -88,6 +88,17 @@
                         <action id="-15" name="Set visible" sid="149343767954428" type="shout">
                             <param id="0" name="Visibility">0</param>
                         </action>
+                        <action id="-4" name="Set position to another object" sid="872920506750403" type="hello">
+                            <param id="0" name="Object">player</param>
+                            <param id="1" name="Image point (optional)">&quot;shoutAnchor&quot;</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="821516259162077" type="hello">
+                            <param id="0" name="Pin to">player</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="600328797480315" type="hello">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="368105805745685">
@@ -351,5 +362,68 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="972999201155870">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="618292797165981" type="Keyboard">
+                    <param id="0" name="Key">17 (Ctrl)</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="744047901985964">
+                    <conditions>
+                        <condition id="-15" name="Pick nearest/furthest" sid="588242545678910" type="enemy">
+                            <param id="0" name="Which">0</param>
+                            <param id="1" name="X">player.X</param>
+                            <param id="2" name="Y">player.Y</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-22" name="Set angle toward position" sid="656040645082662" type="player">
+                            <param id="0" name="X">enemy.X</param>
+                            <param id="1" name="Y">enemy.Y</param>
+                        </action>
+                        <action behavior="Timer" id="0" name="Start timer" sid="633953396734779" type="player">
+                            <param id="0" name="Duration">0.8</param>
+                            <param id="1" name="Type">0</param>
+                            <param id="2" name="Tag">&quot;helloTimer&quot;</param>
+                        </action>
+                        <action id="0" name="Play" sid="896601641032341" type="Audio">
+                            <param id="0" name="Audio file">hello</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;hello&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="417640581934761" type="hello">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="500993521159200">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="577258365264648" type="System">
+                                    <param id="0" name="First value">distance(player.X, player.Y, enemy.X, enemy.Y)</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Second value">enemyDistance</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="330686138107645">
+            <conditions>
+                <condition behavior="Timer" id="0" name="On timer" sid="924600845907783" type="player">
+                    <param id="0" name="Tag">&quot;helloTimer&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="712923714905973" type="hello">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

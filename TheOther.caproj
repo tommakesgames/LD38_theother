@@ -32,7 +32,9 @@
         <behavior author="Scirra" id="shadowcaster" version="1">Shadow Caster</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
-    <used-effects />
+    <used-effects>
+        <effect author="Scirra" id="grayscale">Grayscale</effect>
+    </used-effects>
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
@@ -236,6 +238,30 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="hello" sid="567468553746659">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="297654927264775">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="830068994661074" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="C:\Users\Synapse\Documents\GitHub\LD38_theother\Images\shout.png">
+                        <collision-poly>
+                            <point x="0.84375" y="0.15625" />
+                            <point x="1" y="0.5" />
+                            <point x="0.84375" y="0.84375" />
+                            <point x="0.5" y="0.78125" />
+                            <point x="0.3125" y="0.6875" />
+                            <point x="0.0625" y="0.5" />
+                            <point x="0.28125" y="0.28125" />
+                            <point x="0.5" y="0.1875" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="enemy" plugin-id="Sprite" sid="663671131925655">
@@ -259,6 +285,11 @@
                     <behavior id="Timer" />
                 </behavior-type>
             </behaviors>
+            <effects>
+                <effect-type name="Grayscale">
+                    <effect id="grayscale" />
+                </effect-type>
+            </effects>
         </family>
     </families>
     <layout-folder>
@@ -298,6 +329,8 @@
         <file name="tv-static-01.ogg" />
         <file name="oi.m4a" />
         <file name="oi.ogg" />
+        <file name="hello.m4a" />
+        <file name="hello.ogg" />
     </sounds-folder>
     <music-folder />
     <files-folder>
