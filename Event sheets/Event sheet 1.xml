@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
+        <variable comment="Time that shout appears before moving off screen again" constant="0" name="shoutTime" sid="985385078439286" static="0" type="number">0.8</variable>
         <variable constant="0" name="initialStaticVolume" sid="468792055856604" static="0" type="number">-5</variable>
         <variable constant="0" name="staticVolume" sid="287861013927092" static="0" type="number">-5</variable>
         <variable constant="0" name="initialShake" sid="610507537245482" static="0" type="number">30</variable>
@@ -75,6 +76,17 @@
                         <action behavior="Pin" id="0" name="Pin to object" sid="281484735980116" type="debug_text">
                             <param id="0" name="Pin to">player</param>
                             <param id="1" name="Mode">0</param>
+                        </action>
+                        <action id="-4" name="Set position to another object" sid="481027644300772" type="shout">
+                            <param id="0" name="Object">player</param>
+                            <param id="1" name="Image point (optional)">&quot;shoutAnchor&quot;</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="363109811987881" type="shout">
+                            <param id="0" name="Pin to">player</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="149343767954428" type="shout">
+                            <param id="0" name="Visibility">0</param>
                         </action>
                     </actions>
                 </event-block>
@@ -245,6 +257,61 @@
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                     </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="232648293782727" title="Shout">
+            <sub-events>
+                <event-block sid="691557155677529">
+                    <conditions>
+                        <condition behavior="Timer" id="0" name="On timer" sid="268276429565159" type="player">
+                            <param id="0" name="Tag">&quot;shoutTimer&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="344102708733055" type="shout">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="101990739127220">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="917084486669438" type="Keyboard">
+                            <param id="0" name="Key">32 (Space)</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="582592692667118">
+                            <conditions>
+                                <condition id="-15" name="Pick nearest/furthest" sid="225788486676045" type="enemy">
+                                    <param id="0" name="Which">0</param>
+                                    <param id="1" name="X">player.X</param>
+                                    <param id="2" name="Y">player.Y</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-22" name="Set angle toward position" sid="905151142798819" type="player">
+                                    <param id="0" name="X">enemy.X</param>
+                                    <param id="1" name="Y">enemy.Y</param>
+                                </action>
+                                <action behavior="Timer" id="0" name="Start timer" sid="108574753155459" type="player">
+                                    <param id="0" name="Duration">0.8</param>
+                                    <param id="1" name="Type">0</param>
+                                    <param id="2" name="Tag">&quot;shoutTimer&quot;</param>
+                                </action>
+                                <action id="0" name="Play" sid="330922291074291" type="Audio">
+                                    <param id="0" name="Audio file">oi</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;shout&quot;</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="357550112118178" type="shout">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>
