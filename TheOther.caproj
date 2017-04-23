@@ -73,9 +73,6 @@
                 <behavior-type name="ShadowCaster" sid="825217638470251">
                     <behavior id="shadowcaster" />
                 </behavior-type>
-                <behavior-type name="Solid" sid="248109114609484">
-                    <behavior id="solid" />
-                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="627258595928175" speed="5">
@@ -154,9 +151,6 @@
                 <behavior-type name="ShadowCaster" sid="664979223437964">
                     <behavior id="shadowcaster" />
                 </behavior-type>
-                <behavior-type name="Solid" sid="992727693390231">
-                    <behavior id="solid" />
-                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="151483908224630" speed="5">
@@ -169,9 +163,6 @@
             <behaviors>
                 <behavior-type name="ShadowCaster" sid="193112904779075">
                     <behavior id="shadowcaster" />
-                </behavior-type>
-                <behavior-type name="Solid" sid="817319407090080">
-                    <behavior id="solid" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
@@ -227,9 +218,6 @@
             <behaviors>
                 <behavior-type name="ShadowCaster" sid="237371139589112">
                     <behavior id="shadowcaster" />
-                </behavior-type>
-                <behavior-type name="Solid" sid="115579476881753">
-                    <behavior id="solid" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
@@ -328,6 +316,9 @@
                 </behavior-type>
                 <behavior-type name="Timer" sid="913789353172334">
                     <behavior id="Timer" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="146517935155901">
+                    <behavior id="solid" />
                 </behavior-type>
             </behaviors>
             <effects>
