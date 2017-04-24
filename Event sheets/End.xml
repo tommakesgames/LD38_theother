@@ -49,5 +49,15 @@
                 </event-block>
             </sub-events>
         </event-block>
+        <event-block sid="997516142072156">
+            <conditions>
+                <condition id="1" name="On any key pressed" sid="742014960522269" type="Keyboard" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="688387292173466" type="System">
+                    <param id="0" name="Layout">Start</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

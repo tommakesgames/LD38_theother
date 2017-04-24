@@ -1,0 +1,9 @@
+"INSTRUCTIONS:"&newline&
+&newline&
+"Use the cursor keys to move around."&newline&
+"Press Space to shout, and Ctrl to say 'hello'."&newline&
+&newline&
+"Collect all the letters to open the door and leave."&newline&
+"Red arrow points to nearest letter. Yellow arrow to the door when it's open."&newline&
+&newline&
+"How will you deal with people who are different from you?"
