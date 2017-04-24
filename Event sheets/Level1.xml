@@ -32,7 +32,7 @@
                 </event-block>
                 <event-group description="" sid="933776026765928" title="DarknessToggle">
                     <sub-events>
-                        <event-block sid="471571206092040">
+                        <event-block disabled="1" sid="471571206092040">
                             <conditions>
                                 <condition id="0" name="On key pressed" sid="617193320936416" type="Keyboard">
                                     <param id="0" name="Key">86 (V)</param>
