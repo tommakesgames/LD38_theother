@@ -200,15 +200,15 @@
                         <condition id="-2" name="On start of layout" sid="726579146373648" type="System" />
                     </conditions>
                     <actions>
-                        <action behavior="Flash" id="0" name="Flash" sid="307911616295373" type="marker">
+                        <action behavior="Flash" disabled="1" id="0" name="Flash" sid="307911616295373" type="marker">
                             <param id="0" name="&apos;On&apos; time">0.1</param>
                             <param id="1" name="&apos;Off&apos; time">0.1</param>
                             <param id="2" name="Duration">1.0</param>
                         </action>
-                        <action id="-24" name="Move to top" sid="262541215265875" type="marker" />
+                        <action disabled="1" id="-24" name="Move to top" sid="262541215265875" type="marker" />
                     </actions>
                 </event-block>
-                <event-block sid="244163321760179">
+                <event-block disabled="1" sid="244163321760179">
                     <conditions>
                         <condition behavior="Flash" id="1" name="On flash ended" sid="553405146942139" type="marker" />
                     </conditions>

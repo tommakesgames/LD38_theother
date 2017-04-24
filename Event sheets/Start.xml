@@ -19,7 +19,7 @@
             </conditions>
             <actions>
                 <action id="0" name="Set text" sid="503818879291711" type="InstrText">
-                    <param id="0" name="Text">&quot;INSTRUCTIONS:&quot;&amp;newline&#x0D;&#x0A;&amp;newline&amp;&#x0D;&#x0A;&quot;Use the cursor keys to move around.&quot;&amp;newline&amp;&#x0D;&#x0A;&quot;Press Space to shout, and Ctrl to say &apos;hello&apos;.&quot;&amp;newline&amp;&#x0D;&#x0A;newline&amp;&#x0D;&#x0A;&quot;Collect all the letters to open the door and leave.&quot;&amp;newline&amp;&#x0D;&#x0A;&quot;Red arrow points to nearest letter. Yellow arrow to the door when it&apos;s open.&quot;&amp;newline&amp;&#x0D;&#x0A;newline&amp;&#x0D;&#x0A;&quot;How will you deal with people who are different from you?&quot;</param>
+                    <param id="0" name="Text">&quot;INSTRUCTIONS:&quot;&amp;newline&#x0D;&#x0A;&amp;newline&amp;&#x0D;&#x0A;&quot;Use the cursor keys to move around.&quot;&amp;newline&amp;&#x0D;&#x0A;&quot;Press Space to shout, and Ctrl to say &apos;hello&apos;.&quot;&amp;newline&amp;&#x0D;&#x0A;newline&amp;&#x0D;&#x0A;&quot;Collect all the letters to open the door and leave.&quot;&amp;newline&amp;&#x0D;&#x0A;&quot;Red arrow points to nearest letter. Yellow arrow to the door when it&apos;s open.&quot;&amp;newline&#x0D;&#x0A;&amp;newline&amp;&#x0D;&#x0A;&quot;How will you deal with people who are different from you?&quot;&amp;newline&amp;&#x0D;&#x0A;&quot;What&apos;s the best way to treat people and get on with things?&quot;</param>
                 </action>
             </actions>
         </event-block>

@@ -600,6 +600,10 @@
         <object-type name="InstrText" sid="463838597465555">
             <plugin id="Text" />
         </object-type>
+        <object-type name="TiledBackground3" sid="216503810270698">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Synapse\Documents\GitHub\LD38_theother\Images\raw\floor.png" />
+        </object-type>
     </object-folder>
     <families>
         <family name="people" plugin-id="Sprite" sid="663671131925655">
