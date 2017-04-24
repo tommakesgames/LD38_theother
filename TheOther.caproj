@@ -165,7 +165,7 @@
         </object-type>
         <object-type name="TiledBackground" sid="922096304712711">
             <plugin id="TiledBg" />
-            <texture />
+            <texture original-source="C:\Users\Synapse\Documents\GitHub\LD38_theother\Images\raw\floor.png" />
         </object-type>
         <object-type name="debug_text" sid="502234804303524">
             <plugin id="Text" />
@@ -534,9 +534,9 @@
                     <behavior id="solid" />
                 </behavior-type>
             </behaviors>
-            <texture />
+            <texture original-source="C:\Users\Synapse\Documents\GitHub\LD38_theother\Images\raw\wall.png" />
         </object-type>
-        <object-type name="Sprite" sid="485121298322600">
+        <object-type name="playerHead" sid="485121298322600">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Pin" sid="576396037807130">
@@ -646,6 +646,8 @@
         <file name="doorOpen.ogg" />
         <file name="doorblock.m4a" />
         <file name="doorblock.ogg" />
+        <file name="music.m4a" />
+        <file name="music.ogg" />
     </sounds-folder>
     <music-folder />
     <files-folder>

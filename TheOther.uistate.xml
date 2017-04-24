@@ -12,8 +12,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <open-tabs>
         <layout order="1">Level1</layout>
         <layout order="3">End</layout>
-        <event-sheet active="1" order="2">End</event-sheet>
-        <event-sheet order="0">Level1</event-sheet>
+        <event-sheet order="2">End</event-sheet>
+        <event-sheet active="1" order="0">Level1</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -43,6 +43,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/hello/" />
         <folder expanded="1" path="animation-folder/exit/" />
         <folder expanded="1" path="animation-folder/arrow/" />
-        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/playerHead/" />
     </folders-expanded>
 </c2uistate>

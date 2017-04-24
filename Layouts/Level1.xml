@@ -1264,7 +1264,7 @@
                         <hotspotX>0</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
-                        <opacity>1</opacity>
+                        <opacity>0.600000024</opacity>
                     </world>
                 </instance>
                 <instance type="shakedebug" uid="52">
@@ -3967,7 +3967,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite" uid="90">
+                <instance type="playerHead" uid="90">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>

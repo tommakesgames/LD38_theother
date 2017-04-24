@@ -136,13 +136,19 @@
                         <action id="0" name="Set text" sid="296154933422892" type="Letter">
                             <param id="0" name="Text">Letter.letter</param>
                         </action>
-                        <action id="-4" name="Set position to another object" sid="492628826392745" type="Sprite">
+                        <action id="-4" name="Set position to another object" sid="492628826392745" type="playerHead">
                             <param id="0" name="Object">player</param>
                             <param id="1" name="Image point (optional)">0</param>
                         </action>
-                        <action behavior="Pin" id="0" name="Pin to object" sid="133462538922494" type="Sprite">
+                        <action behavior="Pin" id="0" name="Pin to object" sid="133462538922494" type="playerHead">
                             <param id="0" name="Pin to">player</param>
                             <param id="1" name="Mode">4</param>
+                        </action>
+                        <action id="0" name="Play" sid="670452788120721" type="Audio">
+                            <param id="0" name="Audio file">music</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;bgmusic&quot;</param>
                         </action>
                     </actions>
                 </event-block>
