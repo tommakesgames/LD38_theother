@@ -595,7 +595,7 @@
                 <instance type="debug_text" uid="11">
                     <properties>
                         <text>Debug</text>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <font>Arial,-16</font>
                         <color>255,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
@@ -796,7 +796,7 @@
                 </instance>
                 <instance type="marker" uid="12">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -1270,7 +1270,7 @@
                 <instance type="shakedebug" uid="52">
                     <properties>
                         <text>0</text>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <font>Arial,-16</font>
                         <color>51,0,255</color>
                         <horizontal-alignment>Left</horizontal-alignment>

@@ -474,7 +474,7 @@
                 </behavior-type>
             </behaviors>
         </object-type>
-        <object-type name="Text2" sid="420647857109636">
+        <object-type name="PressKeyText" sid="420647857109636">
             <plugin id="Text" />
         </object-type>
         <object-type name="arrow" sid="607914660747288">
@@ -559,6 +559,46 @@
                     </frame>
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="Text" sid="392357592424004">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TiledBackground2" sid="389831988858067">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Synapse\Documents\GitHub\LD38_theother\Images\raw\floor.png" />
+        </object-type>
+        <object-type name="Sprite" sid="641655761757668">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="120631026414150">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Sine2" sid="220840343906222">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Sine3" sid="393041821972703">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="719790379338568" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Synapse\Documents\GitHub\LD38_theother\Images\raw\title.png">
+                        <collision-poly>
+                            <point x="0.0254042" y="0.0711974" />
+                            <point x="0.5" y="0.0291262" />
+                            <point x="0.811778" y="0.527508" />
+                            <point x="0.974596" y="0.5" />
+                            <point x="0.953233" y="0.868932" />
+                            <point x="0.5" y="0.76699" />
+                            <point x="0.263857" y="0.260518" />
+                            <point x="0.860277" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="InstrText" sid="463838597465555">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families>

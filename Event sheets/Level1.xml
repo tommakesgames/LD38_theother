@@ -20,7 +20,7 @@
         <variable comment="How far till screen shakes" constant="0" name="enemyShakeDistance" sid="755956645796748" static="0" type="number">100</variable>
         <event-group description="" sid="361759795033423" title="Debug">
             <sub-events>
-                <event-block sid="800314739356174">
+                <event-block disabled="1" sid="800314739356174">
                     <conditions>
                         <condition id="0" name="On key pressed" sid="453934829946613" type="Keyboard">
                             <param id="0" name="Key">80 (P)</param>
