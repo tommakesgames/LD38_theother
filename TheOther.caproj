@@ -456,10 +456,10 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="closed" pingpong="0" repeatcount="1" repeatto="0" sid="186270435936553" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Synapse\Documents\GitHub\LD38_theother\Images\raw\door.png" />
                 </animation>
                 <animation framecount="1" loop="0" name="open" pingpong="0" repeatcount="1" repeatto="0" sid="203137042431450" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Synapse\Documents\GitHub\LD38_theother\Images\raw\dooropen.png" />
                 </animation>
             </animation-folder>
         </object-type>
